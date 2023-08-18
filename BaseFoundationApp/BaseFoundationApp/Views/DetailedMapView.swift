@@ -102,6 +102,7 @@ struct DetailedMapView_Previews: PreviewProvider {
         DetailedMapView(location: CLLocation(latitude: 37.335_690,
                                              longitude: -122.013_330),
                         topSafeAreaInset: 0)
+        .ignoresSafeArea()
 
     }
 }

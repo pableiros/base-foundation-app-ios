@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F86ACE472A9003A9000FEF1C /* ParkingSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86ACE462A9003A9000FEF1C /* ParkingSpot.swift */; };
+		F86ACE492A9004B2000FEF1C /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86ACE482A9004B2000FEF1C /* City.swift */; };
+		F86ACE4B2A90052E000FEF1C /* ParkingSpotShowcaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86ACE4A2A90052E000FEF1C /* ParkingSpotShowcaseView.swift */; };
+		F86ACE4F2A90058C000FEF1C /* BinaryFloatingPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86ACE4E2A90058C000FEF1C /* BinaryFloatingPointExtension.swift */; };
+		F86ACE512A9006EA000FEF1C /* ClosedRangeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86ACE502A9006EA000FEF1C /* ClosedRangeExtension.swift */; };
 		F898A7D52A86B12C00DEAF60 /* BaseFoundationAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F898A7D42A86B12C00DEAF60 /* BaseFoundationAppApp.swift */; };
 		F898A7D72A86B12C00DEAF60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F898A7D62A86B12C00DEAF60 /* ContentView.swift */; };
 		F898A7D92A86B12E00DEAF60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F898A7D82A86B12E00DEAF60 /* Assets.xcassets */; };
@@ -14,7 +19,26 @@
 		F898A7E62A86B1E700DEAF60 /* DetailedMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F898A7E52A86B1E700DEAF60 /* DetailedMapView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F81865D22A88273D00179628 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F81865BD2A88273C00179628 /* BaseFoundationWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseFoundationWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F86ACE462A9003A9000FEF1C /* ParkingSpot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSpot.swift; sourceTree = "<group>"; };
+		F86ACE482A9004B2000FEF1C /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		F86ACE4A2A90052E000FEF1C /* ParkingSpotShowcaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSpotShowcaseView.swift; sourceTree = "<group>"; };
+		F86ACE4E2A90058C000FEF1C /* BinaryFloatingPointExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryFloatingPointExtension.swift; sourceTree = "<group>"; };
+		F86ACE502A9006EA000FEF1C /* ClosedRangeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosedRangeExtension.swift; sourceTree = "<group>"; };
 		F898A7D12A86B12C00DEAF60 /* BaseFoundationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseFoundationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F898A7D42A86B12C00DEAF60 /* BaseFoundationAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseFoundationAppApp.swift; sourceTree = "<group>"; };
 		F898A7D62A86B12C00DEAF60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,11 +59,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F81865D72A8827E600179628 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F86ACE452A9003A0000FEF1C /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				F86ACE462A9003A9000FEF1C /* ParkingSpot.swift */,
+				F86ACE482A9004B2000FEF1C /* City.swift */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		F86ACE4D2A900576000FEF1C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F86ACE4E2A90058C000FEF1C /* BinaryFloatingPointExtension.swift */,
+				F86ACE502A9006EA000FEF1C /* ClosedRangeExtension.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		F898A7C82A86B12C00DEAF60 = {
 			isa = PBXGroup;
 			children = (
 				F898A7D32A86B12C00DEAF60 /* BaseFoundationApp */,
 				F898A7D22A86B12C00DEAF60 /* Products */,
+				F81865D72A8827E600179628 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				F898A7D12A86B12C00DEAF60 /* BaseFoundationApp.app */,
+				F81865BD2A88273C00179628 /* BaseFoundationWatchApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +105,8 @@
 		F898A7D32A86B12C00DEAF60 /* BaseFoundationApp */ = {
 			isa = PBXGroup;
 			children = (
+				F86ACE4D2A900576000FEF1C /* Common */,
+				F86ACE452A9003A0000FEF1C /* Templates */,
 				F898A7DB2A86B12E00DEAF60 /* Preview Content */,
 				F898A7E32A86B13300DEAF60 /* SupportingFiles */,
 				F898A7E42A86B14100DEAF60 /* Views */,
@@ -84,6 +137,7 @@
 			children = (
 				F898A7D62A86B12C00DEAF60 /* ContentView.swift */,
 				F898A7E52A86B1E700DEAF60 /* DetailedMapView.swift */,
+				F86ACE4A2A90052E000FEF1C /* ParkingSpotShowcaseView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -91,6 +145,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F81865BC2A88273C00179628 /* BaseFoundationWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F81865D62A88273D00179628 /* Build configuration list for PBXNativeTarget "BaseFoundationWatchApp" */;
+			buildPhases = (
+				F81865BB2A88273C00179628 /* Resources */,
+				F81865D22A88273D00179628 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BaseFoundationWatchApp;
+			productName = BaseFoundationWatchApp;
+			productReference = F81865BD2A88273C00179628 /* BaseFoundationWatchApp.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
 		F898A7D02A86B12C00DEAF60 /* BaseFoundationApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F898A7E02A86B12E00DEAF60 /* Build configuration list for PBXNativeTarget "BaseFoundationApp" */;
@@ -118,6 +188,9 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					F81865BC2A88273C00179628 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 					F898A7D02A86B12C00DEAF60 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -137,11 +210,19 @@
 			projectRoot = "";
 			targets = (
 				F898A7D02A86B12C00DEAF60 /* BaseFoundationApp */,
+				F81865BC2A88273C00179628 /* BaseFoundationWatchApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F81865BB2A88273C00179628 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F898A7CF2A86B12C00DEAF60 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -158,8 +239,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F86ACE4F2A90058C000FEF1C /* BinaryFloatingPointExtension.swift in Sources */,
+				F86ACE512A9006EA000FEF1C /* ClosedRangeExtension.swift in Sources */,
+				F86ACE4B2A90052E000FEF1C /* ParkingSpotShowcaseView.swift in Sources */,
 				F898A7D72A86B12C00DEAF60 /* ContentView.swift in Sources */,
+				F86ACE492A9004B2000FEF1C /* City.swift in Sources */,
 				F898A7E62A86B1E700DEAF60 /* DetailedMapView.swift in Sources */,
+				F86ACE472A9003A9000FEF1C /* ParkingSpot.swift in Sources */,
 				F898A7D52A86B12C00DEAF60 /* BaseFoundationAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,6 +253,39 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		F81865D02A88273D00179628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VJ2UHY4TW3;
+				INFOPLIST_KEY_CFBundleDisplayName = BaseFoundationWatchApp;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pableiros.BaseFoundationWatchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F81865D12A88273D00179628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VJ2UHY4TW3;
+				INFOPLIST_KEY_CFBundleDisplayName = BaseFoundationWatchApp;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pableiros.BaseFoundationWatchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		F898A7DE2A86B12E00DEAF60 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -355,6 +474,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F81865D62A88273D00179628 /* Build configuration list for PBXNativeTarget "BaseFoundationWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F81865D02A88273D00179628 /* Debug */,
+				F81865D12A88273D00179628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F898A7CC2A86B12C00DEAF60 /* Build configuration list for PBXProject "BaseFoundationApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
