@@ -16,7 +16,7 @@ struct ParkingSpotShowcaseView: View {
         GeometryReader { proxy in
             TimelineView(.animation(paused: !animated)) { context in
                 let seconds = context.date.timeIntervalSince1970
-                let rotationPeriod = 100.0
+                let rotationPeriod = 50.0
                 let headingDelta = seconds.percent(truncation: rotationPeriod)
                 let pitchPeriod = 60.0
                 let pitchDelta = seconds
