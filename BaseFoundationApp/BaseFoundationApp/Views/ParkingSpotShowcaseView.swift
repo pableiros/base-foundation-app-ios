@@ -23,7 +23,7 @@ struct ParkingSpotShowcaseView: View {
                     .percent(truncation: pitchPeriod)
                     .symmetricEaseInOut()
                 
-                let viewWidthPercent = (350.0 ... 1000).percent(for: proxy.size.width)
+                let viewWidthPercent = (350.0 ... 350).percent(for: proxy.size.width)
                 let distanceMultiplier = (1 - viewWidthPercent) * 1 + 1
                 
                 DetailedMapView(

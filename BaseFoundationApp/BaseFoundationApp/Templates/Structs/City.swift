@@ -33,11 +33,7 @@ extension City {
                 location: CLLocation(latitude: 37.7956, longitude: -122.3935),
                 cameraDistance: 450
             ),
-            ParkingSpot(
-                name: String(localized: "Golden Gate Bridge", bundle: .main, comment: "A landmark in San Francisco."),
-                location: CLLocation(latitude: 37.8199, longitude: -122.4783),
-                cameraDistance: 2000
-            ),
+            .goldenGateBridge,
             ParkingSpot(
                 name: String(localized: "Oracle Park", bundle: .main, comment: "A landmark in San Francisco."),
                 location: CLLocation(latitude: 37.7786, longitude: -122.3893),
@@ -62,26 +58,15 @@ extension City {
     static let cupertino = City(
         name: String(localized: "Cupertino", bundle: .main, comment: "A city in California."),
         parkingSpots: [
-            ParkingSpot(
-                name: String(localized: "Apple Park", bundle: .main, comment: "Apple's headquarters in California."),
-                location: CLLocation(latitude: 37.3348, longitude: -122.0090),
-                cameraDistance: 1100
-            ),
-            ParkingSpot(
-                name: String(localized: "Infinite Loop", comment: "One of Apple's buildings in California."),
-                location: CLLocation(latitude: 37.3317, longitude: -122.0302)
-            )
+            .applePark,
+            .infiniteLoop
         ]
     )
     
     static let london = City(
         name: String(localized: "London", bundle: .main, comment: "A city in England."),
         parkingSpots: [
-            ParkingSpot(
-                name: String(localized: "Big Ben", bundle: .main, comment: "A landmark in London."),
-                location: CLLocation(latitude: 51.4994, longitude: -0.1245),
-                cameraDistance: 850
-            ),
+            .bigBen,
             ParkingSpot(
                 name: String(localized: "Buckingham Palace", bundle: .main, comment: "A landmark in London."),
                 location: CLLocation(latitude: 51.5014, longitude: -0.1419),

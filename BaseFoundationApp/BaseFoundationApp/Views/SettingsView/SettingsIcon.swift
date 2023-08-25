@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+#if os(macOS)
+import AppKit
+#endif
+
 struct SettingsIcon: View {
     let settingsRow: SettingsTitleRowContainer
     
@@ -25,12 +29,21 @@ struct SettingsIcon: View {
     
     private var image: some View {
         Group {
-            if UIImage(systemName: self.settingsRow.systemImage) != nil {
+            if self.existsImage() {
                 Image(systemName: self.settingsRow.systemImage)
             } else {
                 Image(self.settingsRow.systemImage)
             }
         }
+    }
+    
+    private func existsImage() -> Bool {
+        #if os(macOS)
+        return NSImage(systemSymbolName: self.settingsRow.systemImage,
+                       accessibilityDescription: nil) != nil
+        #else
+        return UIImage(systemName: self.settingsRow.systemImage) != nil
+        #endif
     }
 }
 

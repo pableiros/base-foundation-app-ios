@@ -11,7 +11,7 @@ import SwiftUI
 struct BaseFoundationAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CityView()
         }
     }
 }

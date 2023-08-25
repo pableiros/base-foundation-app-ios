@@ -99,10 +99,9 @@ struct DetailedMapView: ViewControllerRepresentable {
 
 struct DetailedMapView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailedMapView(location: CLLocation(latitude: 37.335_690,
-                                             longitude: -122.013_330),
+        DetailedMapView(location: CLLocation(latitude: 40.689247,
+                                             longitude: -74.044502),
                         topSafeAreaInset: 0)
         .ignoresSafeArea()
-
     }
 }
