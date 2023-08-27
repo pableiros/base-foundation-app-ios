@@ -20,11 +20,16 @@ struct SettingsIcon: View {
     
     var body: some View {
         self.image
-            .font(.system(size: 18))
-            .foregroundColor(.white)
+            .font(.system(size: self.settingsRow.size))
+            .foregroundColor(self.settingsRow.foregroundColor)
             .frame(width: 30, height: 30)
-            .background(settingsRow.imageColor)
+            .background(self.settingsRow.imageColor)
             .cornerRadius(5)
+            .overlay(
+                RoundedRectangle(cornerRadius: 5)
+                    .stroke(self.settingsRow.imageColor == .white ? .gray : .white,
+                            lineWidth: 0.5)
+            )
     }
     
     private var image: some View {
