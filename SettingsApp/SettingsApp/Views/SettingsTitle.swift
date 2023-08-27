@@ -1,8 +1,8 @@
 //
 //  SettingsTitle.swift
-//  BaseFoundationApp
+//  SettingsApp
 //
-//  Created by pablo borquez on 20/08/23.
+//  Created by pablo borquez on 27/08/23.
 //
 
 import SwiftUI

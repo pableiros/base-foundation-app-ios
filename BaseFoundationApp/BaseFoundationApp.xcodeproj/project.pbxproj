@@ -7,15 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F815D3302A9299D0009656B8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F815D32F2A9299D0009656B8 /* SettingsView.swift */; };
-		F815D3322A929AF0009656B8 /* SettingsSectionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F815D3312A929AF0009656B8 /* SettingsSectionContainer.swift */; };
-		F815D3342A929AF7009656B8 /* SettingsTitleRowContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F815D3332A929AF7009656B8 /* SettingsTitleRowContainer.swift */; };
-		F815D33B2A929E32009656B8 /* SettingsTitleValueRowContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F815D33A2A929E32009656B8 /* SettingsTitleValueRowContainer.swift */; };
-		F815D33D2A929E61009656B8 /* SettingsToggleRowContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F815D33C2A929E61009656B8 /* SettingsToggleRowContainer.swift */; };
-		F815D3402A92A513009656B8 /* SettingsIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F815D33F2A92A513009656B8 /* SettingsIcon.swift */; };
-		F815D3422A92A6CC009656B8 /* SettingsTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F815D3412A92A6CC009656B8 /* SettingsTitle.swift */; };
-		F815D3442A92A770009656B8 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F815D3432A92A770009656B8 /* SettingsCell.swift */; };
-		F815D3482A92ACF4009656B8 /* SettingsAccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F815D3472A92ACF4009656B8 /* SettingsAccountCell.swift */; };
 		F838C8BF2A993B7300D0374A /* BaseFoundationiOS in Frameworks */ = {isa = PBXBuildFile; productRef = F838C8BE2A993B7300D0374A /* BaseFoundationiOS */; };
 		F838C8C12A993BC500D0374A /* CityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F838C8C02A993BC500D0374A /* CityView.swift */; };
 		F838C8C42A993CFE00D0374A /* CityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F838C8C32A993CFE00D0374A /* CityType.swift */; };
@@ -45,15 +36,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F815D32F2A9299D0009656B8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		F815D3312A929AF0009656B8 /* SettingsSectionContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSectionContainer.swift; sourceTree = "<group>"; };
-		F815D3332A929AF7009656B8 /* SettingsTitleRowContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTitleRowContainer.swift; sourceTree = "<group>"; };
-		F815D33A2A929E32009656B8 /* SettingsTitleValueRowContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTitleValueRowContainer.swift; sourceTree = "<group>"; };
-		F815D33C2A929E61009656B8 /* SettingsToggleRowContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsToggleRowContainer.swift; sourceTree = "<group>"; };
-		F815D33F2A92A513009656B8 /* SettingsIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsIcon.swift; sourceTree = "<group>"; };
-		F815D3412A92A6CC009656B8 /* SettingsTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTitle.swift; sourceTree = "<group>"; };
-		F815D3432A92A770009656B8 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
-		F815D3472A92ACF4009656B8 /* SettingsAccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAccountCell.swift; sourceTree = "<group>"; };
 		F81865BD2A88273C00179628 /* BaseFoundationWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseFoundationWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F838C8C02A993BC500D0374A /* CityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityView.swift; sourceTree = "<group>"; };
 		F838C8C32A993CFE00D0374A /* CityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityType.swift; sourceTree = "<group>"; };
@@ -92,29 +74,6 @@
 			path = Structs;
 			sourceTree = "<group>";
 		};
-		F815D3392A929D71009656B8 /* Containers */ = {
-			isa = PBXGroup;
-			children = (
-				F815D3312A929AF0009656B8 /* SettingsSectionContainer.swift */,
-				F815D3332A929AF7009656B8 /* SettingsTitleRowContainer.swift */,
-				F815D33A2A929E32009656B8 /* SettingsTitleValueRowContainer.swift */,
-				F815D33C2A929E61009656B8 /* SettingsToggleRowContainer.swift */,
-			);
-			path = Containers;
-			sourceTree = "<group>";
-		};
-		F815D33E2A92A503009656B8 /* SettingsView */ = {
-			isa = PBXGroup;
-			children = (
-				F815D32F2A9299D0009656B8 /* SettingsView.swift */,
-				F815D33F2A92A513009656B8 /* SettingsIcon.swift */,
-				F815D3412A92A6CC009656B8 /* SettingsTitle.swift */,
-				F815D3432A92A770009656B8 /* SettingsCell.swift */,
-				F815D3472A92ACF4009656B8 /* SettingsAccountCell.swift */,
-			);
-			path = SettingsView;
-			sourceTree = "<group>";
-		};
 		F81865D72A8827E600179628 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				F838C8C22A993CF600D0374A /* Enums */,
-				F815D3392A929D71009656B8 /* Containers */,
 				F815D3352A929B21009656B8 /* Structs */,
 			);
 			path = Templates;
@@ -201,7 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				F8D947322A9BCE4F00F1CF4F /* CityViews */,
-				F815D33E2A92A503009656B8 /* SettingsView */,
 				F898A7D62A86B12C00DEAF60 /* ContentView.swift */,
 			);
 			path = Views;
@@ -320,23 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F815D3482A92ACF4009656B8 /* SettingsAccountCell.swift in Sources */,
-				F815D3422A92A6CC009656B8 /* SettingsTitle.swift in Sources */,
-				F815D33B2A929E32009656B8 /* SettingsTitleValueRowContainer.swift in Sources */,
-				F815D3442A92A770009656B8 /* SettingsCell.swift in Sources */,
 				F86ACE4F2A90058C000FEF1C /* BinaryFloatingPointExtension.swift in Sources */,
 				F86ACE512A9006EA000FEF1C /* ClosedRangeExtension.swift in Sources */,
 				F86ACE4B2A90052E000FEF1C /* ParkingSpotShowcaseView.swift in Sources */,
 				F838C8C12A993BC500D0374A /* CityView.swift in Sources */,
-				F815D33D2A929E61009656B8 /* SettingsToggleRowContainer.swift in Sources */,
-				F815D3302A9299D0009656B8 /* SettingsView.swift in Sources */,
 				F898A7D72A86B12C00DEAF60 /* ContentView.swift in Sources */,
 				F86ACE492A9004B2000FEF1C /* City.swift in Sources */,
 				F898A7E62A86B1E700DEAF60 /* DetailedMapView.swift in Sources */,
 				F86ACE472A9003A9000FEF1C /* ParkingSpot.swift in Sources */,
-				F815D3342A929AF7009656B8 /* SettingsTitleRowContainer.swift in Sources */,
-				F815D3322A929AF0009656B8 /* SettingsSectionContainer.swift in Sources */,
-				F815D3402A92A513009656B8 /* SettingsIcon.swift in Sources */,
 				F838C8C42A993CFE00D0374A /* CityType.swift in Sources */,
 				F898A7D52A86B12C00DEAF60 /* BaseFoundationAppApp.swift in Sources */,
 			);

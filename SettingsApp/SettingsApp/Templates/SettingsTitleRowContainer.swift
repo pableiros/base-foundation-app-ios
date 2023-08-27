@@ -1,8 +1,8 @@
 //
-//  SettingsTitleRow.swift
-//  BaseFoundationApp
+//  SettingsTitleRowContainer.swift
+//  SettingsApp
 //
-//  Created by pablo borquez on 20/08/23.
+//  Created by pablo borquez on 27/08/23.
 //
 
 import SwiftUI
@@ -28,4 +28,3 @@ class SettingsTitleRowContainer: ObservableObject, Identifiable {
                                          title: "Red celular")
     }
 }
-
