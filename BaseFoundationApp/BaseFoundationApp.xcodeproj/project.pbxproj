@@ -200,13 +200,21 @@
 		F898A7E42A86B14100DEAF60 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F8D947322A9BCE4F00F1CF4F /* CityViews */,
 				F815D33E2A92A503009656B8 /* SettingsView */,
 				F898A7D62A86B12C00DEAF60 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F8D947322A9BCE4F00F1CF4F /* CityViews */ = {
+			isa = PBXGroup;
+			children = (
 				F898A7E52A86B1E700DEAF60 /* DetailedMapView.swift */,
 				F86ACE4A2A90052E000FEF1C /* ParkingSpotShowcaseView.swift */,
 				F838C8C02A993BC500D0374A /* CityView.swift */,
 			);
-			path = Views;
+			path = CityViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
