@@ -10,6 +10,8 @@
 		F850D7832A9ECD2700C2D13B /* ViewMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F850D7822A9ECD2700C2D13B /* ViewMode.swift */; };
 		F8723B7D2A98359E00B172BE /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8723B7C2A98359E00B172BE /* GridView.swift */; };
 		F8723B7F2A983C4E00B172BE /* Menus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8723B7E2A983C4E00B172BE /* Menus.swift */; };
+		F8A8595C2AA7FCB9006B6A15 /* DayPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A8595B2AA7FCB9006B6A15 /* DayPicker.swift */; };
+		F8A8595F2AA81937006B6A15 /* DateButtonViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A8595E2AA81937006B6A15 /* DateButtonViewModifier.swift */; };
 		F8AD124A2A95946400F23364 /* OnThisDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AD12492A95946400F23364 /* OnThisDayApp.swift */; };
 		F8AD124C2A95946400F23364 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AD124B2A95946400F23364 /* ContentView.swift */; };
 		F8AD124E2A95946500F23364 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8AD124D2A95946500F23364 /* Assets.xcassets */; };
@@ -24,15 +26,19 @@
 		F8C4DB662A9D750B00F54031 /* DisplayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4DB652A9D750B00F54031 /* DisplayMode.swift */; };
 		F8C4DB692A9D781F00F54031 /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4DB682A9D781F00F54031 /* Toolbar.swift */; };
 		F8C4DB6B2A9D7BFD00F54031 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4DB6A2A9D7BFD00F54031 /* TableView.swift */; };
+		F8F0DDCE2AA952CC0004F3B6 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F0DDCD2AA952CC0004F3B6 /* PreferencesView.swift */; };
 		F8F4D6692A96E35000997F56 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F4D6682A96E35000997F56 /* SidebarView.swift */; };
 		F8F4D66B2A96E36300997F56 /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F4D66A2A96E36300997F56 /* EventType.swift */; };
 		F8F4D66D2A96E4FF00997F56 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F4D66C2A96E4FF00997F56 /* EventView.swift */; };
+		F8FA314E2AA955F300DD1BFA /* ShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FA314D2AA955F300DD1BFA /* ShowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F850D7822A9ECD2700C2D13B /* ViewMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMode.swift; sourceTree = "<group>"; };
 		F8723B7C2A98359E00B172BE /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		F8723B7E2A983C4E00B172BE /* Menus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menus.swift; sourceTree = "<group>"; };
+		F8A8595B2AA7FCB9006B6A15 /* DayPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPicker.swift; sourceTree = "<group>"; };
+		F8A8595E2AA81937006B6A15 /* DateButtonViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateButtonViewModifier.swift; sourceTree = "<group>"; };
 		F8AD12462A95946400F23364 /* OnThisDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnThisDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8AD12492A95946400F23364 /* OnThisDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnThisDayApp.swift; sourceTree = "<group>"; };
 		F8AD124B2A95946400F23364 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,9 +55,11 @@
 		F8C4DB652A9D750B00F54031 /* DisplayMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayMode.swift; sourceTree = "<group>"; };
 		F8C4DB682A9D781F00F54031 /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
 		F8C4DB6A2A9D7BFD00F54031 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		F8F0DDCD2AA952CC0004F3B6 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
 		F8F4D6682A96E35000997F56 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		F8F4D66A2A96E36300997F56 /* EventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventType.swift; sourceTree = "<group>"; };
 		F8F4D66C2A96E4FF00997F56 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		F8FA314D2AA955F300DD1BFA /* ShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,14 @@
 				F850D7822A9ECD2700C2D13B /* ViewMode.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		F8A8595D2AA8192B006B6A15 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				F8A8595E2AA81937006B6A15 /* DateButtonViewModifier.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 		F8AD123D2A95946400F23364 = {
@@ -126,6 +142,8 @@
 		F8AD12592A95959800F23364 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F8FA314A2AA9557F00DD1BFA /* SettingsViews */,
+				F8A8595D2AA8192B006B6A15 /* ViewModifiers */,
 				F8C4DB672A9D781000F54031 /* Controls */,
 				F8AD124B2A95946400F23364 /* ContentView.swift */,
 				F8F4D6682A96E35000997F56 /* SidebarView.swift */,
@@ -156,6 +174,7 @@
 		F8C4DB672A9D781000F54031 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				F8A8595B2AA7FCB9006B6A15 /* DayPicker.swift */,
 				F8723B7E2A983C4E00B172BE /* Menus.swift */,
 				F8C4DB682A9D781F00F54031 /* Toolbar.swift */,
 			);
@@ -171,6 +190,15 @@
 				F8AD12622A9595C800F23364 /* Day.swift */,
 			);
 			path = Templates;
+			sourceTree = "<group>";
+		};
+		F8FA314A2AA9557F00DD1BFA /* SettingsViews */ = {
+			isa = PBXGroup;
+			children = (
+				F8F0DDCD2AA952CC0004F3B6 /* PreferencesView.swift */,
+				F8FA314D2AA955F300DD1BFA /* ShowView.swift */,
+			);
+			path = SettingsViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,12 +276,16 @@
 				F8AD12682A9595C800F23364 /* EventLink.swift in Sources */,
 				F8723B7D2A98359E00B172BE /* GridView.swift in Sources */,
 				F8F4D66D2A96E4FF00997F56 /* EventView.swift in Sources */,
+				F8A8595C2AA7FCB9006B6A15 /* DayPicker.swift in Sources */,
 				F8F4D66B2A96E36300997F56 /* EventType.swift in Sources */,
+				F8A8595F2AA81937006B6A15 /* DateButtonViewModifier.swift in Sources */,
 				F8C4DB662A9D750B00F54031 /* DisplayMode.swift in Sources */,
 				F8AD12642A9595C800F23364 /* String_decoded.swift in Sources */,
 				F8AD12662A9595C800F23364 /* AppState.swift in Sources */,
+				F8FA314E2AA955F300DD1BFA /* ShowView.swift in Sources */,
 				F850D7832A9ECD2700C2D13B /* ViewMode.swift in Sources */,
 				F8AD12692A9595C800F23364 /* Day.swift in Sources */,
+				F8F0DDCE2AA952CC0004F3B6 /* PreferencesView.swift in Sources */,
 				F8AD12632A9595C800F23364 /* SampleEvent.swift in Sources */,
 				F8C4DB692A9D781F00F54031 /* Toolbar.swift in Sources */,
 				F8C4DB6B2A9D7BFD00F54031 /* TableView.swift in Sources */,

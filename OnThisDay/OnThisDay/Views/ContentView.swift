@@ -10,12 +10,15 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var appState: AppState
     
+    @SceneStorage("selectedDate") var selectedDate: String?
     @SceneStorage("eventType") var eventType: EventType?
     @SceneStorage("searchText") var searchText = ""
     @SceneStorage("viewMode") var viewMode = ViewMode.grid
     
     var events: [Event] {
-        return self.appState.dataFor(eventType: self.eventType, searchText: self.searchText)
+        return self.appState.dataFor(eventType: self.eventType,
+                                     date: self.selectedDate,
+                                     searchText: self.searchText)
     }
     
     var windowTitle: String {
