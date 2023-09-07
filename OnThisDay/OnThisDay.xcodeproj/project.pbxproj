@@ -31,6 +31,7 @@
 		F8F4D66B2A96E36300997F56 /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F4D66A2A96E36300997F56 /* EventType.swift */; };
 		F8F4D66D2A96E4FF00997F56 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F4D66C2A96E4FF00997F56 /* EventView.swift */; };
 		F8FA314E2AA955F300DD1BFA /* ShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FA314D2AA955F300DD1BFA /* ShowView.swift */; };
+		F8FA31502AA9579400DD1BFA /* AppearanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FA314F2AA9579400DD1BFA /* AppearanceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		F8F4D66A2A96E36300997F56 /* EventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventType.swift; sourceTree = "<group>"; };
 		F8F4D66C2A96E4FF00997F56 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		F8FA314D2AA955F300DD1BFA /* ShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowView.swift; sourceTree = "<group>"; };
+		F8FA314F2AA9579400DD1BFA /* AppearanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 			children = (
 				F8F0DDCD2AA952CC0004F3B6 /* PreferencesView.swift */,
 				F8FA314D2AA955F300DD1BFA /* ShowView.swift */,
+				F8FA314F2AA9579400DD1BFA /* AppearanceView.swift */,
 			);
 			path = SettingsViews;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				F8AD12682A9595C800F23364 /* EventLink.swift in Sources */,
 				F8723B7D2A98359E00B172BE /* GridView.swift in Sources */,
 				F8F4D66D2A96E4FF00997F56 /* EventView.swift in Sources */,
+				F8FA31502AA9579400DD1BFA /* AppearanceView.swift in Sources */,
 				F8A8595C2AA7FCB9006B6A15 /* DayPicker.swift in Sources */,
 				F8F4D66B2A96E36300997F56 /* EventType.swift in Sources */,
 				F8A8595F2AA81937006B6A15 /* DateButtonViewModifier.swift in Sources */,

@@ -16,7 +16,7 @@ struct PreferencesView: View {
                     Text("Show")
                 }
             
-            Text("Tab 2 content here")
+            AppearanceView()
                 .tabItem {
                     Image(systemName: "sun.min")
                     Text("Appearance")
