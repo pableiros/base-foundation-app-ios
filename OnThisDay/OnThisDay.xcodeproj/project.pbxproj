@@ -40,7 +40,7 @@
 		F8723B7E2A983C4E00B172BE /* Menus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menus.swift; sourceTree = "<group>"; };
 		F8A8595B2AA7FCB9006B6A15 /* DayPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPicker.swift; sourceTree = "<group>"; };
 		F8A8595E2AA81937006B6A15 /* DateButtonViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateButtonViewModifier.swift; sourceTree = "<group>"; };
-		F8AD12462A95946400F23364 /* OnThisDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnThisDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8AD12462A95946400F23364 /* On This Day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "On This Day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8AD12492A95946400F23364 /* OnThisDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnThisDayApp.swift; sourceTree = "<group>"; };
 		F8AD124B2A95946400F23364 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F8AD124D2A95946500F23364 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 		F8AD12472A95946400F23364 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F8AD12462A95946400F23364 /* OnThisDay.app */,
+				F8AD12462A95946400F23364 /* On This Day.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -207,9 +207,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F8AD12452A95946400F23364 /* OnThisDay */ = {
+		F8AD12452A95946400F23364 /* On This Day */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F8AD12552A95946500F23364 /* Build configuration list for PBXNativeTarget "OnThisDay" */;
+			buildConfigurationList = F8AD12552A95946500F23364 /* Build configuration list for PBXNativeTarget "On This Day" */;
 			buildPhases = (
 				F8AD12422A95946400F23364 /* Sources */,
 				F8AD12432A95946400F23364 /* Frameworks */,
@@ -219,9 +219,9 @@
 			);
 			dependencies = (
 			);
-			name = OnThisDay;
+			name = "On This Day";
 			productName = OnThisDay;
-			productReference = F8AD12462A95946400F23364 /* OnThisDay.app */;
+			productReference = F8AD12462A95946400F23364 /* On This Day.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -252,7 +252,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F8AD12452A95946400F23364 /* OnThisDay */,
+				F8AD12452A95946400F23364 /* On This Day */,
 			);
 		};
 /* End PBXProject section */
@@ -482,7 +482,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F8AD12552A95946500F23364 /* Build configuration list for PBXNativeTarget "OnThisDay" */ = {
+		F8AD12552A95946500F23364 /* Build configuration list for PBXNativeTarget "On This Day" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F8AD12562A95946500F23364 /* Debug */,
