@@ -16,7 +16,7 @@ struct Menus: Commands {
         
         ToolbarCommands()
         
-        CommandGroup(before: .help) {
+        CommandGroup(replacing: .help) {
             Button {
                 self.showApiWebsite()
             } label: {
