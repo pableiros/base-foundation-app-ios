@@ -24,12 +24,21 @@
                                         <menuItem isSeparatorItem="YES" id="Mgk-h4-mRO"/>
                                         <menuItem title="Start Next Task" id="dhk-qg-Iyk">
                                             <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="startStopTask:" target="Voe-Tx-rLC" id="XWF-Y8-mLu"/>
+                                            </connections>
                                         </menuItem>
                                         <menuItem title="Edit Tasks…" id="4pa-18-naB">
                                             <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="showEditTaskWindow:" target="Voe-Tx-rLC" id="4cR-9b-giQ"/>
+                                            </connections>
                                         </menuItem>
                                         <menuItem title="Launch on Login" id="ZVc-KG-yEB">
                                             <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="toggleLaunchOnLogin:" target="Voe-Tx-rLC" id="k4M-et-KPv"/>
+                                            </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
                                         <menuItem title="Quit Time-ato" id="4sb-4s-VLi">
@@ -49,6 +58,8 @@
                 </application>
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Time_ato" customModuleProvider="target">
                     <connections>
+                        <outlet property="launchOnLoginMenuItem" destination="ZVc-KG-yEB" id="zMI-tJ-lDa"/>
+                        <outlet property="startStopMenuItem" destination="dhk-qg-Iyk" id="SRg-Wc-8e1"/>
                         <outlet property="statusMenu" destination="uQy-DD-JDr" id="50y-L0-PVZ"/>
                     </connections>
                 </customObject>

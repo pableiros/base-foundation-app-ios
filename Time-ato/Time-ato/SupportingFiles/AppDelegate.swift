@@ -13,7 +13,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var menuManager: MenuManager?
     
     @IBOutlet weak var statusMenu: NSMenu!
-
+    @IBOutlet weak var startStopMenuItem: NSMenuItem!
+    @IBOutlet weak var launchOnLoginMenuItem: NSMenuItem!
+    
+    // MARK: - NSApplicationDelegate
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         self.statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
         self.statusItem?.menu = self.statusMenu
@@ -36,6 +40,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
         return true
+    }
+    
+    // MARK: - IBAction
+    
+    @IBAction func startStopTask(_ sender: Any) {
+        self.menuManager?.taskManager.toggleTask()
+    }
+    
+    @IBAction func showEditTaskWindow(_ sender: Any) {
+    }
+    
+    @IBAction func toggleLaunchOnLogin(_ sender: Any) {
     }
 }
 
