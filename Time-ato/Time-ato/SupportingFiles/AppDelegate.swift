@@ -10,6 +10,7 @@ import Cocoa
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
     var statusItem: NSStatusItem?
+    var menuManager: MenuManager?
     
     @IBOutlet weak var statusMenu: NSMenu!
 
@@ -24,6 +25,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         self.statusItem?.button?.font = NSFont.monospacedSystemFont(ofSize: NSFont.systemFontSize,
                                                                     weight: .regular)
+        
+        self.menuManager = MenuManager(statusMenu: self.statusMenu)
+        self.statusMenu.delegate = self.menuManager
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
