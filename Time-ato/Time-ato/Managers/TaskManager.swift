@@ -5,7 +5,7 @@
 //  Created by pablo borquez on 12/09/23.
 //
 
-import Foundation
+import AppKit
 import Combine
 
 class TaskManager {
@@ -24,8 +24,8 @@ class TaskManager {
                      on: .current,
                      in: .common)
             .autoconnect()
-            .sink { time in
-                print(time)
+            .sink { _ in
+                self.checkTimings()
             }
     }
     
@@ -49,6 +49,15 @@ class TaskManager {
     func stopRunningTask(at taskIndex: Int) {
         self.tasks[taskIndex].complete()
         self.timerState = .waiting
+    }
+    
+    func checkTimings() {
+        let taskIsRunning = self.timerState.activeTaskIndex != nil
+        
+        guard let appDelegate = NSApp.delegate as? AppDelegate else { return }
+        
+        let (title, icon) = self.menuTitleAndIcon
+        appDelegate.updateMenu(title: title, icon: icon, taskIsRunning: taskIsRunning)
     }
 }
 

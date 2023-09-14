@@ -53,6 +53,14 @@ class MenuManager: NSObject, NSMenuDelegate {
         }
     }
     
+    func updateMenuItems() {
+        for item in self.statusMenu.items {
+            if let view = item.view as? TaskView {
+                view.setNeedsDisplay(.infinite)
+            }
+        }
+    }
+    
     // MARK: - NSMenuDelegate
     
     func menuWillOpen(_ menu: NSMenu) {

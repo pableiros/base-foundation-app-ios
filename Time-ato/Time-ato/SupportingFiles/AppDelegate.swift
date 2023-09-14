@@ -16,6 +16,24 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var startStopMenuItem: NSMenuItem!
     @IBOutlet weak var launchOnLoginMenuItem: NSMenuItem!
     
+    func updateMenu(title: String, icon: String, taskIsRunning: Bool) {
+        self.statusItem?.button?.image = NSImage(systemSymbolName: icon,
+                                                 accessibilityDescription: title)
+        self.updateMenuItemTitles(taskIsRunning: taskIsRunning)
+    }
+    
+    func updateMenuItemTitles(taskIsRunning: Bool) {
+        if taskIsRunning {
+            self.startStopMenuItem.title = "Mark Task as Complete"
+        } else {
+            self.startStopMenuItem.title = "Start Next Task"
+        }
+        
+        if self.menuManager?.menuIsOpen == true {
+            self.menuManager?.updateMenuItems()
+        }
+    }
+    
     // MARK: - NSApplicationDelegate
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
