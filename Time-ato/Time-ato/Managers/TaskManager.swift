@@ -49,15 +49,68 @@ class TaskManager {
     func stopRunningTask(at taskIndex: Int) {
         self.tasks[taskIndex].complete()
         self.timerState = .waiting
+        
+        if taskIndex < self.tasks.count - 1 {
+            self.startBreak(after: taskIndex)
+        }
     }
     
     func checkTimings() {
         let taskIsRunning = self.timerState.activeTaskIndex != nil
         
-        guard let appDelegate = NSApp.delegate as? AppDelegate else { return }
+        switch timerState {
+        case .runningTask(let taskIndex):
+            checkForTaskFinish(activeTaskIndex: taskIndex)
+        case
+                .takingShortBreak(let startTime),
+                .takingLongBreak(let startTime):
+            if let breakDuration = timerState.breakDuration {
+                checkForBreakFinish(
+                    startTime: startTime,
+                    duration: breakDuration)
+            }
+        default:
+            break
+        }
         
-        let (title, icon) = self.menuTitleAndIcon
-        appDelegate.updateMenu(title: title, icon: icon, taskIsRunning: taskIsRunning)
+        if taskIsRunning == true {
+            print("a")
+        }
+        
+        if let appDelegate = NSApp.delegate as? AppDelegate {
+            let (title, icon) = self.menuTitleAndIcon
+            appDelegate.updateMenu(title: title, icon: icon, taskIsRunning: taskIsRunning)
+        }
+    }
+    
+    func checkForTaskFinish(activeTaskIndex: Int) {
+        let activeTask = self.tasks[activeTaskIndex]
+        
+        guard activeTask.progressPercent >= 100 else { return }
+        
+        // tell user task has finished
+        
+        self.stopRunningTask(at: activeTaskIndex)
+    }
+    
+    func checkForBreakFinish(startTime: Date, duration: TimeInterval) {
+        let elapsedTime = -startTime.timeIntervalSinceNow
+        if elapsedTime >= duration {
+            
+            self.timerState = .waiting
+        }
+        
+        // tell user break has finished
+    }
+    
+    func startBreak(after index: Int) {
+        let oneSecondFromNow = Date(timeIntervalSinceNow: 1)
+        
+        if (index + 1).isMultiple(of: 4) {
+            self.timerState = .takingLongBreak(startTime: oneSecondFromNow)
+        } else {
+            self.timerState = .takingShortBreak(startTime: oneSecondFromNow)
+        }
     }
 }
 
