@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F84F8FA12ABE23A1008B48A5 /* HeartRateBPMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84F8FA02ABE23A1008B48A5 /* HeartRateBPMView.swift */; };
+		F84F8FA52ABE2BEA008B48A5 /* HeartRateChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84F8FA42ABE2BEA008B48A5 /* HeartRateChartView.swift */; };
 		F8511F262ABCC59F004E1F4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8511F252ABCC59F004E1F4D /* AppDelegate.swift */; };
 		F8511F282ABCC59F004E1F4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8511F272ABCC59F004E1F4D /* SceneDelegate.swift */; };
 		F8511F2A2ABCC59F004E1F4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8511F292ABCC59F004E1F4D /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		F84F8FA02ABE23A1008B48A5 /* HeartRateBPMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateBPMView.swift; sourceTree = "<group>"; };
+		F84F8FA42ABE2BEA008B48A5 /* HeartRateChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateChartView.swift; sourceTree = "<group>"; };
 		F8511F222ABCC59F004E1F4D /* UIKitWithSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitWithSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8511F252ABCC59F004E1F4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8511F272ABCC59F004E1F4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				F85E061D2ABCD40100CBABF3 /* HeartRateCellView.swift */,
 				F85E061F2ABCD41E00CBABF3 /* HeartRateTitleView.swift */,
 				F84F8FA02ABE23A1008B48A5 /* HeartRateBPMView.swift */,
+				F84F8FA42ABE2BEA008B48A5 /* HeartRateChartView.swift */,
 			);
 			path = HealtRateViews;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				F84F8FA12ABE23A1008B48A5 /* HeartRateBPMView.swift in Sources */,
 				F8511F3F2ABCC60B004E1F4D /* HealthSection.swift in Sources */,
 				F8511F262ABCC59F004E1F4D /* AppDelegate.swift in Sources */,
+				F84F8FA52ABE2BEA008B48A5 /* HeartRateChartView.swift in Sources */,
 				F85E06202ABCD41E00CBABF3 /* HeartRateTitleView.swift in Sources */,
 				F8511F282ABCC59F004E1F4D /* SceneDelegate.swift in Sources */,
 			);

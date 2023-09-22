@@ -16,6 +16,7 @@ struct HeartRateCellView: View {
             HStack(alignment: .bottom) {
                 HeartRateBPMView(latestSample: data.latestSample)
                 Spacer(minLength: 60)
+                HeartRateChartView(heartRateSamples: data.samples)
             }
         }
         .padding(.vertical, 8)
