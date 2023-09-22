@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F84F8FA12ABE23A1008B48A5 /* HeartRateBPMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84F8FA02ABE23A1008B48A5 /* HeartRateBPMView.swift */; };
 		F8511F262ABCC59F004E1F4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8511F252ABCC59F004E1F4D /* AppDelegate.swift */; };
 		F8511F282ABCC59F004E1F4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8511F272ABCC59F004E1F4D /* SceneDelegate.swift */; };
 		F8511F2A2ABCC59F004E1F4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8511F292ABCC59F004E1F4D /* ViewController.swift */; };
 		F8511F2D2ABCC59F004E1F4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8511F2B2ABCC59F004E1F4D /* Main.storyboard */; };
 		F8511F2F2ABCC5A1004E1F4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8511F2E2ABCC5A1004E1F4D /* Assets.xcassets */; };
 		F8511F322ABCC5A1004E1F4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8511F302ABCC5A1004E1F4D /* LaunchScreen.storyboard */; };
+		F8511F3F2ABCC60B004E1F4D /* HealthSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8511F3E2ABCC60B004E1F4D /* HealthSection.swift */; };
+		F8511F432ABCC63F004E1F4D /* HeartRateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8511F422ABCC63F004E1F4D /* HeartRateData.swift */; };
+		F8511F452ABCC64A004E1F4D /* HeartRateSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8511F442ABCC64A004E1F4D /* HeartRateSample.swift */; };
+		F85E061C2ABCD36600CBABF3 /* StaticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85E061B2ABCD36600CBABF3 /* StaticData.swift */; };
+		F85E061E2ABCD40100CBABF3 /* HeartRateCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85E061D2ABCD40100CBABF3 /* HeartRateCellView.swift */; };
+		F85E06202ABCD41E00CBABF3 /* HeartRateTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85E061F2ABCD41E00CBABF3 /* HeartRateTitleView.swift */; };
+		F87F502C2ABCCDBD003A2163 /* CollectionViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87F502B2ABCCDBD003A2163 /* CollectionViewFactory.swift */; };
+		F87F502E2ABCD00E003A2163 /* LayoutMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87F502D2ABCD00E003A2163 /* LayoutMetrics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F84F8FA02ABE23A1008B48A5 /* HeartRateBPMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateBPMView.swift; sourceTree = "<group>"; };
 		F8511F222ABCC59F004E1F4D /* UIKitWithSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitWithSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8511F252ABCC59F004E1F4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8511F272ABCC59F004E1F4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +34,14 @@
 		F8511F2E2ABCC5A1004E1F4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8511F312ABCC5A1004E1F4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8511F332ABCC5A1004E1F4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8511F3E2ABCC60B004E1F4D /* HealthSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthSection.swift; sourceTree = "<group>"; };
+		F8511F422ABCC63F004E1F4D /* HeartRateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateData.swift; sourceTree = "<group>"; };
+		F8511F442ABCC64A004E1F4D /* HeartRateSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateSample.swift; sourceTree = "<group>"; };
+		F85E061B2ABCD36600CBABF3 /* StaticData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticData.swift; sourceTree = "<group>"; };
+		F85E061D2ABCD40100CBABF3 /* HeartRateCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateCellView.swift; sourceTree = "<group>"; };
+		F85E061F2ABCD41E00CBABF3 /* HeartRateTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateTitleView.swift; sourceTree = "<group>"; };
+		F87F502B2ABCCDBD003A2163 /* CollectionViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewFactory.swift; sourceTree = "<group>"; };
+		F87F502D2ABCD00E003A2163 /* LayoutMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutMetrics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +55,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F84F8F9F2ABE2365008B48A5 /* HealtRateViews */ = {
+			isa = PBXGroup;
+			children = (
+				F85E061D2ABCD40100CBABF3 /* HeartRateCellView.swift */,
+				F85E061F2ABCD41E00CBABF3 /* HeartRateTitleView.swift */,
+				F84F8FA02ABE23A1008B48A5 /* HeartRateBPMView.swift */,
+			);
+			path = HealtRateViews;
+			sourceTree = "<group>";
+		};
 		F8511F192ABCC59F004E1F4D = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +84,12 @@
 		F8511F242ABCC59F004E1F4D /* UIKitWithSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				F87F502A2ABCCDAC003A2163 /* Factories */,
+				F8511F3C2ABCC5FA004E1F4D /* Templates */,
+				F8511F332ABCC5A1004E1F4D /* Info.plist */,
+				F8511F392ABCC5A5004E1F4D /* SupportingFiles */,
 				F8511F3B2ABCC5C1004E1F4D /* ViewControllers */,
 				F8511F3A2ABCC5B3004E1F4D /* Views */,
-				F8511F392ABCC5A5004E1F4D /* SupportingFiles */,
-				F8511F332ABCC5A1004E1F4D /* Info.plist */,
 			);
 			path = UIKitWithSwiftUI;
 			sourceTree = "<group>";
@@ -77,6 +107,7 @@
 		F8511F3A2ABCC5B3004E1F4D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F8511F402ABCC61F004E1F4D /* SwiftUI */,
 				F8511F302ABCC5A1004E1F4D /* LaunchScreen.storyboard */,
 				F8511F2B2ABCC59F004E1F4D /* Main.storyboard */,
 			);
@@ -89,6 +120,50 @@
 				F8511F292ABCC59F004E1F4D /* ViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F8511F3C2ABCC5FA004E1F4D /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				F8511F412ABCC63B004E1F4D /* Structs */,
+				F8511F3D2ABCC603004E1F4D /* Enums */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		F8511F3D2ABCC603004E1F4D /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				F8511F3E2ABCC60B004E1F4D /* HealthSection.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		F8511F402ABCC61F004E1F4D /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				F84F8F9F2ABE2365008B48A5 /* HealtRateViews */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		F8511F412ABCC63B004E1F4D /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				F8511F422ABCC63F004E1F4D /* HeartRateData.swift */,
+				F8511F442ABCC64A004E1F4D /* HeartRateSample.swift */,
+				F87F502D2ABCD00E003A2163 /* LayoutMetrics.swift */,
+				F85E061B2ABCD36600CBABF3 /* StaticData.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		F87F502A2ABCCDAC003A2163 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				F87F502B2ABCCDBD003A2163 /* CollectionViewFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,8 +237,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8511F452ABCC64A004E1F4D /* HeartRateSample.swift in Sources */,
+				F8511F432ABCC63F004E1F4D /* HeartRateData.swift in Sources */,
 				F8511F2A2ABCC59F004E1F4D /* ViewController.swift in Sources */,
+				F85E061E2ABCD40100CBABF3 /* HeartRateCellView.swift in Sources */,
+				F87F502E2ABCD00E003A2163 /* LayoutMetrics.swift in Sources */,
+				F87F502C2ABCCDBD003A2163 /* CollectionViewFactory.swift in Sources */,
+				F85E061C2ABCD36600CBABF3 /* StaticData.swift in Sources */,
+				F84F8FA12ABE23A1008B48A5 /* HeartRateBPMView.swift in Sources */,
+				F8511F3F2ABCC60B004E1F4D /* HealthSection.swift in Sources */,
 				F8511F262ABCC59F004E1F4D /* AppDelegate.swift in Sources */,
+				F85E06202ABCD41E00CBABF3 /* HeartRateTitleView.swift in Sources */,
 				F8511F282ABCC59F004E1F4D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

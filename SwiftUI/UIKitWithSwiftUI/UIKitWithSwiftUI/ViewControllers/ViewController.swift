@@ -8,12 +8,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    private var factory: CollectionViewFactory?
+    
+    override func loadView() {
+        self.factory = CollectionViewFactory()
+        self.view = self.factory?.createCollectionView()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.view.maximumContentSizeCategory = .extraExtraExtraLarge
+        self.title = "Health Demo"
+        self.navigationItem.largeTitleDisplayMode = .always
+        self.navigationController?.navigationBar.prefersLargeTitles = true
     }
-
-
 }
 
