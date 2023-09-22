@@ -12,7 +12,8 @@ struct HeartRateBPMView: View {
     
     var body: some View {
         HStack(alignment: .firstTextBaseline, spacing: 2) {
-            Text(self.latestSample.beatsPerMinute, format: .number)
+            Text(self.latestSample.beatsPerMinute,
+                 format: .number)
                 .foregroundStyle(.primary)
                 .font(.system(.title, weight: .semibold))
             Text("BPM")
