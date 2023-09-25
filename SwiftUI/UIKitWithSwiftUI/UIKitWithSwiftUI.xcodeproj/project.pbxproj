@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F828C1EF2AC225D7001DF26C /* HealthCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F828C1EE2AC225D7001DF26C /* HealthCategory.swift */; };
+		F828C1F12AC225E2001DF26C /* HealthCategoryProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F828C1F02AC225E2001DF26C /* HealthCategoryProperties.swift */; };
+		F828C1F42AC2267C001DF26C /* HealthCategoryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F828C1F32AC2267C001DF26C /* HealthCategoryCellView.swift */; };
 		F84F8FA12ABE23A1008B48A5 /* HeartRateBPMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84F8FA02ABE23A1008B48A5 /* HeartRateBPMView.swift */; };
 		F84F8FA52ABE2BEA008B48A5 /* HeartRateChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84F8FA42ABE2BEA008B48A5 /* HeartRateChartView.swift */; };
 		F8511F262ABCC59F004E1F4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8511F252ABCC59F004E1F4D /* AppDelegate.swift */; };
@@ -26,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F828C1EE2AC225D7001DF26C /* HealthCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCategory.swift; sourceTree = "<group>"; };
+		F828C1F02AC225E2001DF26C /* HealthCategoryProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCategoryProperties.swift; sourceTree = "<group>"; };
+		F828C1F32AC2267C001DF26C /* HealthCategoryCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCategoryCellView.swift; sourceTree = "<group>"; };
 		F84F8FA02ABE23A1008B48A5 /* HeartRateBPMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateBPMView.swift; sourceTree = "<group>"; };
 		F84F8FA42ABE2BEA008B48A5 /* HeartRateChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateChartView.swift; sourceTree = "<group>"; };
 		F8511F222ABCC59F004E1F4D /* UIKitWithSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitWithSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F828C1F22AC2266E001DF26C /* HealthCategoryViews */ = {
+			isa = PBXGroup;
+			children = (
+				F828C1F32AC2267C001DF26C /* HealthCategoryCellView.swift */,
+			);
+			path = HealthCategoryViews;
+			sourceTree = "<group>";
+		};
 		F84F8F9F2ABE2365008B48A5 /* HealtRateViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				F8511F3E2ABCC60B004E1F4D /* HealthSection.swift */,
+				F828C1EE2AC225D7001DF26C /* HealthCategory.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -145,6 +160,7 @@
 		F8511F402ABCC61F004E1F4D /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				F828C1F22AC2266E001DF26C /* HealthCategoryViews */,
 				F84F8F9F2ABE2365008B48A5 /* HealtRateViews */,
 			);
 			path = SwiftUI;
@@ -157,6 +173,7 @@
 				F8511F442ABCC64A004E1F4D /* HeartRateSample.swift */,
 				F87F502D2ABCD00E003A2163 /* LayoutMetrics.swift */,
 				F85E061B2ABCD36600CBABF3 /* StaticData.swift */,
+				F828C1F02AC225E2001DF26C /* HealthCategoryProperties.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -246,13 +263,16 @@
 				F85E061E2ABCD40100CBABF3 /* HeartRateCellView.swift in Sources */,
 				F87F502E2ABCD00E003A2163 /* LayoutMetrics.swift in Sources */,
 				F87F502C2ABCCDBD003A2163 /* CollectionViewFactory.swift in Sources */,
+				F828C1F42AC2267C001DF26C /* HealthCategoryCellView.swift in Sources */,
 				F85E061C2ABCD36600CBABF3 /* StaticData.swift in Sources */,
 				F84F8FA12ABE23A1008B48A5 /* HeartRateBPMView.swift in Sources */,
 				F8511F3F2ABCC60B004E1F4D /* HealthSection.swift in Sources */,
+				F828C1EF2AC225D7001DF26C /* HealthCategory.swift in Sources */,
 				F8511F262ABCC59F004E1F4D /* AppDelegate.swift in Sources */,
 				F84F8FA52ABE2BEA008B48A5 /* HeartRateChartView.swift in Sources */,
 				F85E06202ABCD41E00CBABF3 /* HeartRateTitleView.swift in Sources */,
 				F8511F282ABCC59F004E1F4D /* SceneDelegate.swift in Sources */,
+				F828C1F12AC225E2001DF26C /* HealthCategoryProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

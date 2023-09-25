@@ -25,9 +25,22 @@ class CollectionViewFactory: NSObject, UICollectionViewDataSource {
         }
     }()
     
+    private var healthCategoryCellRegistration: UICollectionView.CellRegistration<UICollectionViewListCell, HealthCategory> = {
+        .init { cell, indexPath, item in
+            cell.contentConfiguration = UIHostingConfiguration {
+                HealthCategoryCellView(healthCategory: item)
+            }
+        }
+    }()
+    
     func createCollectionView() -> UICollectionView {
         let layout = UICollectionViewCompositionalLayout { [unowned self] sectionIndex, layoutEnvironment in
-            return createOrthogonalScrollingSection()
+            switch HealthSection(rawValue: sectionIndex)! {
+            case .heartRate:
+                return createOrthogonalScrollingSection()
+            case .healthCategories:
+                return createListSection(layoutEnvironment)
+            }
         }
         
         self.collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -45,12 +58,23 @@ class CollectionViewFactory: NSObject, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return data.heartRateItems.count
+        switch HealthSection(rawValue: section)! {
+        case .heartRate:
+            return data.heartRateItems.count
+        case .healthCategories:
+            return data.healthCategories.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let item = data.heartRateItems[indexPath.item]
-        return collectionView.dequeueConfiguredReusableCell(using: heartRateCellRegistration, for: indexPath, item: item)
+        switch HealthSection(rawValue: indexPath.section)! {
+        case .heartRate:
+            let item = data.heartRateItems[indexPath.item]
+            return collectionView.dequeueConfiguredReusableCell(using: heartRateCellRegistration, for: indexPath, item: item)
+        case .healthCategories:
+            let item = data.healthCategories[indexPath.item]
+            return collectionView.dequeueConfiguredReusableCell(using: healthCategoryCellRegistration, for: indexPath, item: item)
+        }
     }
     
     // MARK: - private
@@ -67,6 +91,18 @@ class CollectionViewFactory: NSObject, UICollectionViewDataSource {
         let section = NSCollectionLayoutSection(group: group)
         section.orthogonalScrollingBehavior = .groupPaging
         section.contentInsets = .zero
+        section.contentInsets.trailing = LayoutMetrics.horizontalMargin
+        section.contentInsets.bottom = LayoutMetrics.sectionSpacing
+        
+        return section
+    }
+    
+    private func createListSection(_ layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection {
+        let config = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
+        let section = NSCollectionLayoutSection.list(using: config, layoutEnvironment: layoutEnvironment)
+        
+        section.contentInsets = .zero
+        section.contentInsets.leading = LayoutMetrics.horizontalMargin
         section.contentInsets.trailing = LayoutMetrics.horizontalMargin
         section.contentInsets.bottom = LayoutMetrics.sectionSpacing
         
