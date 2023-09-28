@@ -33,13 +33,28 @@ class CollectionViewFactory: NSObject, UICollectionViewDataSource {
         }
     }()
     
+    private var sleepCellRegistration: UICollectionView.CellRegistration<UICollectionViewCell, SleepData> = {
+        .init { cell, indexPath, item in
+            cell.contentConfiguration = UIHostingConfiguration {
+                SleepCellView(data: item)
+            }
+            .margins(.horizontal, LayoutMetrics.horizontalMargin)
+            .background {
+                RoundedRectangle(cornerRadius: LayoutMetrics.cornerRadius, style: .continuous)
+                    .fill(Color(uiColor: .secondarySystemGroupedBackground))
+            }
+        }
+    }()
+    
     func createCollectionView() -> UICollectionView {
         let layout = UICollectionViewCompositionalLayout { [unowned self] sectionIndex, layoutEnvironment in
             switch HealthSection(rawValue: sectionIndex)! {
             case .heartRate:
-                return createOrthogonalScrollingSection()
+                return self.createOrthogonalScrollingSection()
             case .healthCategories:
-                return createListSection(layoutEnvironment)
+                return self.createListSection(layoutEnvironment)
+            case .sleep:
+                return self.createGridSection()
             }
         }
         
@@ -63,6 +78,8 @@ class CollectionViewFactory: NSObject, UICollectionViewDataSource {
             return data.heartRateItems.count
         case .healthCategories:
             return data.healthCategories.count
+        case .sleep:
+            return data.sleepItems.count
         }
     }
     
@@ -74,6 +91,9 @@ class CollectionViewFactory: NSObject, UICollectionViewDataSource {
         case .healthCategories:
             let item = data.healthCategories[indexPath.item]
             return collectionView.dequeueConfiguredReusableCell(using: healthCategoryCellRegistration, for: indexPath, item: item)
+        case .sleep:
+            let item = data.sleepItems[indexPath.item]
+            return collectionView.dequeueConfiguredReusableCell(using: sleepCellRegistration, for: indexPath, item: item)
         }
     }
     
@@ -101,6 +121,26 @@ class CollectionViewFactory: NSObject, UICollectionViewDataSource {
         let config = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
         let section = NSCollectionLayoutSection.list(using: config, layoutEnvironment: layoutEnvironment)
         
+        section.contentInsets = .zero
+        section.contentInsets.leading = LayoutMetrics.horizontalMargin
+        section.contentInsets.trailing = LayoutMetrics.horizontalMargin
+        section.contentInsets.bottom = LayoutMetrics.sectionSpacing
+        
+        return section
+    }
+    
+    private func createGridSection() -> NSCollectionLayoutSection {
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5), heightDimension: .estimated(120))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(120))
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, repeatingSubitem: item, count: 2)
+    
+        group.interItemSpacing = .fixed(8)
+        
+        let section = NSCollectionLayoutSection(group: group)
+        
+        section.interGroupSpacing = 8
         section.contentInsets = .zero
         section.contentInsets.leading = LayoutMetrics.horizontalMargin
         section.contentInsets.trailing = LayoutMetrics.horizontalMargin

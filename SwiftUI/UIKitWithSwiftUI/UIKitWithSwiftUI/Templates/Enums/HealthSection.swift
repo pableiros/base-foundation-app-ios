@@ -10,4 +10,5 @@ import Foundation
 enum HealthSection: Int, CaseIterable {
     case heartRate
     case healthCategories
+    case sleep
 }

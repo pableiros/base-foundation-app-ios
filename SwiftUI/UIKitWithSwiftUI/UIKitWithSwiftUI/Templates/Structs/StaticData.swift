@@ -10,4 +10,5 @@ import Foundation
 struct StaticData {
     lazy var heartRateItems = HeartRateData.generateRandomData(quantity: 3)
     lazy var healthCategories = HealthCategory.allCases
+    lazy var sleepItems = SleepData.generateRandomData(quantity: 4)
 }

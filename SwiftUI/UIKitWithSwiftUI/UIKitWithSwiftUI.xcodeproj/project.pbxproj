@@ -26,6 +26,12 @@
 		F85E06202ABCD41E00CBABF3 /* HeartRateTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85E061F2ABCD41E00CBABF3 /* HeartRateTitleView.swift */; };
 		F87F502C2ABCCDBD003A2163 /* CollectionViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87F502B2ABCCDBD003A2163 /* CollectionViewFactory.swift */; };
 		F87F502E2ABCD00E003A2163 /* LayoutMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87F502D2ABCD00E003A2163 /* LayoutMetrics.swift */; };
+		F89E2A352AC60CE800A499FA /* SleepData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89E2A342AC60CE800A499FA /* SleepData.swift */; };
+		F89E2A372AC60CF200A499FA /* SleepSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89E2A362AC60CF200A499FA /* SleepSample.swift */; };
+		F89E2A3A2AC60DB100A499FA /* SleepCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89E2A392AC60DB100A499FA /* SleepCellView.swift */; };
+		F89E2A3C2AC60DBC00A499FA /* SleepChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89E2A3B2AC60DBC00A499FA /* SleepChartView.swift */; };
+		F89E2A3E2AC60DD700A499FA /* SleepTimeInBedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89E2A3D2AC60DD700A499FA /* SleepTimeInBedView.swift */; };
+		F89E2A402AC60DEA00A499FA /* HourMinuteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89E2A3F2AC60DEA00A499FA /* HourMinuteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +56,12 @@
 		F85E061F2ABCD41E00CBABF3 /* HeartRateTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateTitleView.swift; sourceTree = "<group>"; };
 		F87F502B2ABCCDBD003A2163 /* CollectionViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewFactory.swift; sourceTree = "<group>"; };
 		F87F502D2ABCD00E003A2163 /* LayoutMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutMetrics.swift; sourceTree = "<group>"; };
+		F89E2A342AC60CE800A499FA /* SleepData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepData.swift; sourceTree = "<group>"; };
+		F89E2A362AC60CF200A499FA /* SleepSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepSample.swift; sourceTree = "<group>"; };
+		F89E2A392AC60DB100A499FA /* SleepCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepCellView.swift; sourceTree = "<group>"; };
+		F89E2A3B2AC60DBC00A499FA /* SleepChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepChartView.swift; sourceTree = "<group>"; };
+		F89E2A3D2AC60DD700A499FA /* SleepTimeInBedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTimeInBedView.swift; sourceTree = "<group>"; };
+		F89E2A3F2AC60DEA00A499FA /* HourMinuteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourMinuteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +172,7 @@
 		F8511F402ABCC61F004E1F4D /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				F89E2A382AC60DA700A499FA /* SleepViews */,
 				F828C1F22AC2266E001DF26C /* HealthCategoryViews */,
 				F84F8F9F2ABE2365008B48A5 /* HealtRateViews */,
 			);
@@ -174,6 +187,8 @@
 				F87F502D2ABCD00E003A2163 /* LayoutMetrics.swift */,
 				F85E061B2ABCD36600CBABF3 /* StaticData.swift */,
 				F828C1F02AC225E2001DF26C /* HealthCategoryProperties.swift */,
+				F89E2A342AC60CE800A499FA /* SleepData.swift */,
+				F89E2A362AC60CF200A499FA /* SleepSample.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -184,6 +199,17 @@
 				F87F502B2ABCCDBD003A2163 /* CollectionViewFactory.swift */,
 			);
 			path = Factories;
+			sourceTree = "<group>";
+		};
+		F89E2A382AC60DA700A499FA /* SleepViews */ = {
+			isa = PBXGroup;
+			children = (
+				F89E2A392AC60DB100A499FA /* SleepCellView.swift */,
+				F89E2A3B2AC60DBC00A499FA /* SleepChartView.swift */,
+				F89E2A3D2AC60DD700A499FA /* SleepTimeInBedView.swift */,
+				F89E2A3F2AC60DEA00A499FA /* HourMinuteView.swift */,
+			);
+			path = SleepViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,18 +283,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F89E2A3E2AC60DD700A499FA /* SleepTimeInBedView.swift in Sources */,
 				F8511F452ABCC64A004E1F4D /* HeartRateSample.swift in Sources */,
 				F8511F432ABCC63F004E1F4D /* HeartRateData.swift in Sources */,
 				F8511F2A2ABCC59F004E1F4D /* ViewController.swift in Sources */,
+				F89E2A372AC60CF200A499FA /* SleepSample.swift in Sources */,
 				F85E061E2ABCD40100CBABF3 /* HeartRateCellView.swift in Sources */,
+				F89E2A402AC60DEA00A499FA /* HourMinuteView.swift in Sources */,
 				F87F502E2ABCD00E003A2163 /* LayoutMetrics.swift in Sources */,
 				F87F502C2ABCCDBD003A2163 /* CollectionViewFactory.swift in Sources */,
 				F828C1F42AC2267C001DF26C /* HealthCategoryCellView.swift in Sources */,
 				F85E061C2ABCD36600CBABF3 /* StaticData.swift in Sources */,
 				F84F8FA12ABE23A1008B48A5 /* HeartRateBPMView.swift in Sources */,
+				F89E2A352AC60CE800A499FA /* SleepData.swift in Sources */,
 				F8511F3F2ABCC60B004E1F4D /* HealthSection.swift in Sources */,
 				F828C1EF2AC225D7001DF26C /* HealthCategory.swift in Sources */,
+				F89E2A3C2AC60DBC00A499FA /* SleepChartView.swift in Sources */,
 				F8511F262ABCC59F004E1F4D /* AppDelegate.swift in Sources */,
+				F89E2A3A2AC60DB100A499FA /* SleepCellView.swift in Sources */,
 				F84F8FA52ABE2BEA008B48A5 /* HeartRateChartView.swift in Sources */,
 				F85E06202ABCD41E00CBABF3 /* HeartRateTitleView.swift in Sources */,
 				F8511F282ABCC59F004E1F4D /* SceneDelegate.swift in Sources */,
