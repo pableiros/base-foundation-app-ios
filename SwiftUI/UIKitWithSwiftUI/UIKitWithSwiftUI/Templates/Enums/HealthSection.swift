@@ -11,4 +11,5 @@ enum HealthSection: Int, CaseIterable {
     case heartRate
     case healthCategories
     case sleep
+    case steps
 }

@@ -32,6 +32,8 @@
 		F89E2A3C2AC60DBC00A499FA /* SleepChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89E2A3B2AC60DBC00A499FA /* SleepChartView.swift */; };
 		F89E2A3E2AC60DD700A499FA /* SleepTimeInBedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89E2A3D2AC60DD700A499FA /* SleepTimeInBedView.swift */; };
 		F89E2A402AC60DEA00A499FA /* HourMinuteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89E2A3F2AC60DEA00A499FA /* HourMinuteView.swift */; };
+		F8B718112AC75A5A00AACBEA /* StepData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B718102AC75A5A00AACBEA /* StepData.swift */; };
+		F8B718132AC75AF900AACBEA /* StepCountCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B718122AC75AF900AACBEA /* StepCountCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		F89E2A3B2AC60DBC00A499FA /* SleepChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepChartView.swift; sourceTree = "<group>"; };
 		F89E2A3D2AC60DD700A499FA /* SleepTimeInBedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTimeInBedView.swift; sourceTree = "<group>"; };
 		F89E2A3F2AC60DEA00A499FA /* HourMinuteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourMinuteView.swift; sourceTree = "<group>"; };
+		F8B718102AC75A5A00AACBEA /* StepData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepData.swift; sourceTree = "<group>"; };
+		F8B718122AC75AF900AACBEA /* StepCountCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +176,7 @@
 		F8511F402ABCC61F004E1F4D /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				F8B7180F2AC75A3B00AACBEA /* StepCounts */,
 				F89E2A382AC60DA700A499FA /* SleepViews */,
 				F828C1F22AC2266E001DF26C /* HealthCategoryViews */,
 				F84F8F9F2ABE2365008B48A5 /* HealtRateViews */,
@@ -189,6 +194,7 @@
 				F828C1F02AC225E2001DF26C /* HealthCategoryProperties.swift */,
 				F89E2A342AC60CE800A499FA /* SleepData.swift */,
 				F89E2A362AC60CF200A499FA /* SleepSample.swift */,
+				F8B718102AC75A5A00AACBEA /* StepData.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -210,6 +216,14 @@
 				F89E2A3F2AC60DEA00A499FA /* HourMinuteView.swift */,
 			);
 			path = SleepViews;
+			sourceTree = "<group>";
+		};
+		F8B7180F2AC75A3B00AACBEA /* StepCounts */ = {
+			isa = PBXGroup;
+			children = (
+				F8B718122AC75AF900AACBEA /* StepCountCellView.swift */,
+			);
+			path = StepCounts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,7 +254,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					F8511F212ABCC59F004E1F4D = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -300,6 +314,8 @@
 				F828C1EF2AC225D7001DF26C /* HealthCategory.swift in Sources */,
 				F89E2A3C2AC60DBC00A499FA /* SleepChartView.swift in Sources */,
 				F8511F262ABCC59F004E1F4D /* AppDelegate.swift in Sources */,
+				F8B718112AC75A5A00AACBEA /* StepData.swift in Sources */,
+				F8B718132AC75AF900AACBEA /* StepCountCellView.swift in Sources */,
 				F89E2A3A2AC60DB100A499FA /* SleepCellView.swift in Sources */,
 				F84F8FA52ABE2BEA008B48A5 /* HeartRateChartView.swift in Sources */,
 				F85E06202ABCD41E00CBABF3 /* HeartRateTitleView.swift in Sources */,
@@ -366,6 +382,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -426,6 +443,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

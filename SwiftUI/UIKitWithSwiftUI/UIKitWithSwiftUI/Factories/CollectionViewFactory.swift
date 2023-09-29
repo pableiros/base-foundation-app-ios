@@ -46,6 +46,14 @@ class CollectionViewFactory: NSObject, UICollectionViewDataSource {
         }
     }()
     
+    private var stepCountCellRegistration: UICollectionView.CellRegistration<UICollectionViewListCell, StepData> = {
+        .init { cell, indexPath, item in
+            cell.contentConfiguration = UIHostingConfiguration {
+                StepCountCellView(data: item)
+            }
+        }
+    }()
+    
     func createCollectionView() -> UICollectionView {
         let layout = UICollectionViewCompositionalLayout { [unowned self] sectionIndex, layoutEnvironment in
             switch HealthSection(rawValue: sectionIndex)! {
@@ -55,6 +63,8 @@ class CollectionViewFactory: NSObject, UICollectionViewDataSource {
                 return self.createListSection(layoutEnvironment)
             case .sleep:
                 return self.createGridSection()
+            case .steps:
+                return createListSection(layoutEnvironment)
             }
         }
         
@@ -80,6 +90,8 @@ class CollectionViewFactory: NSObject, UICollectionViewDataSource {
             return data.healthCategories.count
         case .sleep:
             return data.sleepItems.count
+        case .steps:
+            return data.stepItems.count
         }
     }
     
@@ -94,6 +106,9 @@ class CollectionViewFactory: NSObject, UICollectionViewDataSource {
         case .sleep:
             let item = data.sleepItems[indexPath.item]
             return collectionView.dequeueConfiguredReusableCell(using: sleepCellRegistration, for: indexPath, item: item)
+        case .steps:
+            let item = data.stepItems[indexPath.item]
+            return collectionView.dequeueConfiguredReusableCell(using: stepCountCellRegistration, for: indexPath, item: item)
         }
     }
     
