@@ -28,6 +28,12 @@
 		F81B5F0A2ACF796C001BBB6B /* BookingForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5F092ACF796C001BBB6B /* BookingForm.swift */; };
 		F81B5F0C2ACF7991001BBB6B /* AirportPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5F0B2ACF7991001BBB6B /* AirportPicker.swift */; };
 		F81B5F0E2ACF79AC001BBB6B /* AirportPickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5F0D2ACF79AC001BBB6B /* AirportPickerRow.swift */; };
+		F81B5F102ACF7A87001BBB6B /* JourneyPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5F0F2ACF7A87001BBB6B /* JourneyPicker.swift */; };
+		F81B5F132ACF7AED001BBB6B /* JourneyIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5F122ACF7AED001BBB6B /* JourneyIcon.swift */; };
+		F81B5F172ACF7B17001BBB6B /* VerticalAlignmentExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5F162ACF7B17001BBB6B /* VerticalAlignmentExtension.swift */; };
+		F81B5F192ACF7B3E001BBB6B /* DestinationAirportButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5F182ACF7B3E001BBB6B /* DestinationAirportButton.swift */; };
+		F81B5F1B2ACF7B4F001BBB6B /* OriginAirportButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5F1A2ACF7B4F001BBB6B /* OriginAirportButton.swift */; };
+		F81B5F1D2ACF7B72001BBB6B /* BookingFormAirportDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5F1C2ACF7B72001BBB6B /* BookingFormAirportDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +59,12 @@
 		F81B5F092ACF796C001BBB6B /* BookingForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingForm.swift; sourceTree = "<group>"; };
 		F81B5F0B2ACF7991001BBB6B /* AirportPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportPicker.swift; sourceTree = "<group>"; };
 		F81B5F0D2ACF79AC001BBB6B /* AirportPickerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportPickerRow.swift; sourceTree = "<group>"; };
+		F81B5F0F2ACF7A87001BBB6B /* JourneyPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyPicker.swift; sourceTree = "<group>"; };
+		F81B5F122ACF7AED001BBB6B /* JourneyIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyIcon.swift; sourceTree = "<group>"; };
+		F81B5F162ACF7B17001BBB6B /* VerticalAlignmentExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalAlignmentExtension.swift; sourceTree = "<group>"; };
+		F81B5F182ACF7B3E001BBB6B /* DestinationAirportButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationAirportButton.swift; sourceTree = "<group>"; };
+		F81B5F1A2ACF7B4F001BBB6B /* OriginAirportButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginAirportButton.swift; sourceTree = "<group>"; };
+		F81B5F1C2ACF7B72001BBB6B /* BookingFormAirportDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingFormAirportDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +97,7 @@
 		F81B5ED72ACF6E60001BBB6B /* FlightPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				F81B5F142ACF7B07001BBB6B /* Common */,
 				F81B5EEE2ACF705C001BBB6B /* Models */,
 				F81B5EE82ACF6EE5001BBB6B /* Templates */,
 				F81B5EE72ACF6E6D001BBB6B /* SupportingFiles */,
@@ -156,10 +169,12 @@
 		F81B5EF12ACF70DA001BBB6B /* BookingFormView */ = {
 			isa = PBXGroup;
 			children = (
+				F81B5F112ACF7ADE001BBB6B /* BookingFormAirportDetails */,
 				F81B5EF22ACF70EB001BBB6B /* BookingFormView.swift */,
 				F81B5F092ACF796C001BBB6B /* BookingForm.swift */,
 				F81B5F0B2ACF7991001BBB6B /* AirportPicker.swift */,
 				F81B5F0D2ACF79AC001BBB6B /* AirportPickerRow.swift */,
+				F81B5F0F2ACF7A87001BBB6B /* JourneyPicker.swift */,
 			);
 			path = BookingFormView;
 			sourceTree = "<group>";
@@ -172,6 +187,33 @@
 				F81B5F032ACF7766001BBB6B /* FlightLegGenerator.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		F81B5F112ACF7ADE001BBB6B /* BookingFormAirportDetails */ = {
+			isa = PBXGroup;
+			children = (
+				F81B5F122ACF7AED001BBB6B /* JourneyIcon.swift */,
+				F81B5F182ACF7B3E001BBB6B /* DestinationAirportButton.swift */,
+				F81B5F1A2ACF7B4F001BBB6B /* OriginAirportButton.swift */,
+				F81B5F1C2ACF7B72001BBB6B /* BookingFormAirportDetails.swift */,
+			);
+			path = BookingFormAirportDetails;
+			sourceTree = "<group>";
+		};
+		F81B5F142ACF7B07001BBB6B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F81B5F152ACF7B0B001BBB6B /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F81B5F152ACF7B0B001BBB6B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F81B5F162ACF7B17001BBB6B /* VerticalAlignmentExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,18 +293,24 @@
 				F81B5F042ACF7766001BBB6B /* FlightLegGenerator.swift in Sources */,
 				F81B5F062ACF7808001BBB6B /* BookingFormInputData.swift in Sources */,
 				F81B5F002ACF769A001BBB6B /* FlightLeg.swift in Sources */,
+				F81B5F192ACF7B3E001BBB6B /* DestinationAirportButton.swift in Sources */,
 				F81B5EFE2ACF7686001BBB6B /* FlightSegment.swift in Sources */,
 				F81B5EDB2ACF6E60001BBB6B /* ContentView.swift in Sources */,
 				F81B5F022ACF7757001BBB6B /* FlightLegInfo.swift in Sources */,
+				F81B5F1B2ACF7B4F001BBB6B /* OriginAirportButton.swift in Sources */,
 				F81B5EF82ACF7628001BBB6B /* PassengerInfo.swift in Sources */,
 				F81B5F0A2ACF796C001BBB6B /* BookingForm.swift in Sources */,
 				F81B5ED92ACF6E60001BBB6B /* FlightPlannerApp.swift in Sources */,
+				F81B5F1D2ACF7B72001BBB6B /* BookingFormAirportDetails.swift in Sources */,
 				F81B5EF32ACF70EB001BBB6B /* BookingFormView.swift in Sources */,
+				F81B5F172ACF7B17001BBB6B /* VerticalAlignmentExtension.swift in Sources */,
+				F81B5F132ACF7AED001BBB6B /* JourneyIcon.swift in Sources */,
 				F81B5EFA2ACF7645001BBB6B /* FlightInfo.swift in Sources */,
 				F81B5F0E2ACF79AC001BBB6B /* AirportPickerRow.swift in Sources */,
 				F81B5EF62ACF7611001BBB6B /* FlightJourney.swift in Sources */,
 				F81B5EFC2ACF766A001BBB6B /* FlightSegmentGenerator.swift in Sources */,
 				F81B5EF02ACF7069001BBB6B /* AirportModel.swift in Sources */,
+				F81B5F102ACF7A87001BBB6B /* JourneyPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
