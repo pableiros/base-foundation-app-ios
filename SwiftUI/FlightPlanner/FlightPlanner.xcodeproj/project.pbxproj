@@ -13,6 +13,8 @@
 		F81B5EE02ACF6E62001BBB6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F81B5EDF2ACF6E62001BBB6B /* Preview Assets.xcassets */; };
 		F81B5EEB2ACF6F5D001BBB6B /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5EEA2ACF6F5D001BBB6B /* Airport.swift */; };
 		F81B5EED2ACF6FB8001BBB6B /* Airports.json in Resources */ = {isa = PBXBuildFile; fileRef = F81B5EEC2ACF6FB8001BBB6B /* Airports.json */; };
+		F81B5EF02ACF7069001BBB6B /* AirportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5EEF2ACF7069001BBB6B /* AirportModel.swift */; };
+		F81B5EF32ACF70EB001BBB6B /* BookingFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5EF22ACF70EB001BBB6B /* BookingFormView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		F81B5EDF2ACF6E62001BBB6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F81B5EEA2ACF6F5D001BBB6B /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 		F81B5EEC2ACF6FB8001BBB6B /* Airports.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Airports.json; sourceTree = "<group>"; };
+		F81B5EEF2ACF7069001BBB6B /* AirportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportModel.swift; sourceTree = "<group>"; };
+		F81B5EF22ACF70EB001BBB6B /* BookingFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingFormView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 		F81B5ED72ACF6E60001BBB6B /* FlightPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				F81B5EEE2ACF705C001BBB6B /* Models */,
 				F81B5EE82ACF6EE5001BBB6B /* Templates */,
 				F81B5EE72ACF6E6D001BBB6B /* SupportingFiles */,
 				F81B5EE62ACF6E67001BBB6B /* Views */,
@@ -74,6 +79,7 @@
 		F81B5EE62ACF6E67001BBB6B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F81B5EF12ACF70DA001BBB6B /* BookingFormView */,
 				F81B5EDA2ACF6E60001BBB6B /* ContentView.swift */,
 			);
 			path = Views;
@@ -103,6 +109,22 @@
 				F81B5EEA2ACF6F5D001BBB6B /* Airport.swift */,
 			);
 			path = Structs;
+			sourceTree = "<group>";
+		};
+		F81B5EEE2ACF705C001BBB6B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F81B5EEF2ACF7069001BBB6B /* AirportModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F81B5EF12ACF70DA001BBB6B /* BookingFormView */ = {
+			isa = PBXGroup;
+			children = (
+				F81B5EF22ACF70EB001BBB6B /* BookingFormView.swift */,
+			);
+			path = BookingFormView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +201,8 @@
 				F81B5EEB2ACF6F5D001BBB6B /* Airport.swift in Sources */,
 				F81B5EDB2ACF6E60001BBB6B /* ContentView.swift in Sources */,
 				F81B5ED92ACF6E60001BBB6B /* FlightPlannerApp.swift in Sources */,
+				F81B5EF32ACF70EB001BBB6B /* BookingFormView.swift in Sources */,
+				F81B5EF02ACF7069001BBB6B /* AirportModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
