@@ -15,6 +15,16 @@
 		F81B5EED2ACF6FB8001BBB6B /* Airports.json in Resources */ = {isa = PBXBuildFile; fileRef = F81B5EEC2ACF6FB8001BBB6B /* Airports.json */; };
 		F81B5EF02ACF7069001BBB6B /* AirportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5EEF2ACF7069001BBB6B /* AirportModel.swift */; };
 		F81B5EF32ACF70EB001BBB6B /* BookingFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5EF22ACF70EB001BBB6B /* BookingFormView.swift */; };
+		F81B5EF62ACF7611001BBB6B /* FlightJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5EF52ACF7611001BBB6B /* FlightJourney.swift */; };
+		F81B5EF82ACF7628001BBB6B /* PassengerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5EF72ACF7628001BBB6B /* PassengerInfo.swift */; };
+		F81B5EFA2ACF7645001BBB6B /* FlightInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5EF92ACF7645001BBB6B /* FlightInfo.swift */; };
+		F81B5EFC2ACF766A001BBB6B /* FlightSegmentGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5EFB2ACF766A001BBB6B /* FlightSegmentGenerator.swift */; };
+		F81B5EFE2ACF7686001BBB6B /* FlightSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5EFD2ACF7686001BBB6B /* FlightSegment.swift */; };
+		F81B5F002ACF769A001BBB6B /* FlightLeg.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5EFF2ACF769A001BBB6B /* FlightLeg.swift */; };
+		F81B5F022ACF7757001BBB6B /* FlightLegInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5F012ACF7757001BBB6B /* FlightLegInfo.swift */; };
+		F81B5F042ACF7766001BBB6B /* FlightLegGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5F032ACF7766001BBB6B /* FlightLegGenerator.swift */; };
+		F81B5F062ACF7808001BBB6B /* BookingFormInputData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5F052ACF7808001BBB6B /* BookingFormInputData.swift */; };
+		F81B5F082ACF781B001BBB6B /* FlightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5F072ACF781B001BBB6B /* FlightModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +37,16 @@
 		F81B5EEC2ACF6FB8001BBB6B /* Airports.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Airports.json; sourceTree = "<group>"; };
 		F81B5EEF2ACF7069001BBB6B /* AirportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportModel.swift; sourceTree = "<group>"; };
 		F81B5EF22ACF70EB001BBB6B /* BookingFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingFormView.swift; sourceTree = "<group>"; };
+		F81B5EF52ACF7611001BBB6B /* FlightJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightJourney.swift; sourceTree = "<group>"; };
+		F81B5EF72ACF7628001BBB6B /* PassengerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerInfo.swift; sourceTree = "<group>"; };
+		F81B5EF92ACF7645001BBB6B /* FlightInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightInfo.swift; sourceTree = "<group>"; };
+		F81B5EFB2ACF766A001BBB6B /* FlightSegmentGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSegmentGenerator.swift; sourceTree = "<group>"; };
+		F81B5EFD2ACF7686001BBB6B /* FlightSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSegment.swift; sourceTree = "<group>"; };
+		F81B5EFF2ACF769A001BBB6B /* FlightLeg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLeg.swift; sourceTree = "<group>"; };
+		F81B5F012ACF7757001BBB6B /* FlightLegInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLegInfo.swift; sourceTree = "<group>"; };
+		F81B5F032ACF7766001BBB6B /* FlightLegGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLegGenerator.swift; sourceTree = "<group>"; };
+		F81B5F052ACF7808001BBB6B /* BookingFormInputData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingFormInputData.swift; sourceTree = "<group>"; };
+		F81B5F072ACF781B001BBB6B /* FlightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +118,7 @@
 		F81B5EE82ACF6EE5001BBB6B /* Templates */ = {
 			isa = PBXGroup;
 			children = (
+				F81B5EF42ACF7606001BBB6B /* Enums */,
 				F81B5EE92ACF6EEC001BBB6B /* Structs */,
 			);
 			path = Templates;
@@ -107,6 +128,12 @@
 			isa = PBXGroup;
 			children = (
 				F81B5EEA2ACF6F5D001BBB6B /* Airport.swift */,
+				F81B5EF72ACF7628001BBB6B /* PassengerInfo.swift */,
+				F81B5EF92ACF7645001BBB6B /* FlightInfo.swift */,
+				F81B5EFD2ACF7686001BBB6B /* FlightSegment.swift */,
+				F81B5EFF2ACF769A001BBB6B /* FlightLeg.swift */,
+				F81B5F012ACF7757001BBB6B /* FlightLegInfo.swift */,
+				F81B5F052ACF7808001BBB6B /* BookingFormInputData.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -115,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				F81B5EEF2ACF7069001BBB6B /* AirportModel.swift */,
+				F81B5F072ACF781B001BBB6B /* FlightModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -125,6 +153,16 @@
 				F81B5EF22ACF70EB001BBB6B /* BookingFormView.swift */,
 			);
 			path = BookingFormView;
+			sourceTree = "<group>";
+		};
+		F81B5EF42ACF7606001BBB6B /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				F81B5EF52ACF7611001BBB6B /* FlightJourney.swift */,
+				F81B5EFB2ACF766A001BBB6B /* FlightSegmentGenerator.swift */,
+				F81B5F032ACF7766001BBB6B /* FlightLegGenerator.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,10 +236,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F81B5F082ACF781B001BBB6B /* FlightModel.swift in Sources */,
 				F81B5EEB2ACF6F5D001BBB6B /* Airport.swift in Sources */,
+				F81B5F042ACF7766001BBB6B /* FlightLegGenerator.swift in Sources */,
+				F81B5F062ACF7808001BBB6B /* BookingFormInputData.swift in Sources */,
+				F81B5F002ACF769A001BBB6B /* FlightLeg.swift in Sources */,
+				F81B5EFE2ACF7686001BBB6B /* FlightSegment.swift in Sources */,
 				F81B5EDB2ACF6E60001BBB6B /* ContentView.swift in Sources */,
+				F81B5F022ACF7757001BBB6B /* FlightLegInfo.swift in Sources */,
+				F81B5EF82ACF7628001BBB6B /* PassengerInfo.swift in Sources */,
 				F81B5ED92ACF6E60001BBB6B /* FlightPlannerApp.swift in Sources */,
 				F81B5EF32ACF70EB001BBB6B /* BookingFormView.swift in Sources */,
+				F81B5EFA2ACF7645001BBB6B /* FlightInfo.swift in Sources */,
+				F81B5EF62ACF7611001BBB6B /* FlightJourney.swift in Sources */,
+				F81B5EFC2ACF766A001BBB6B /* FlightSegmentGenerator.swift in Sources */,
 				F81B5EF02ACF7069001BBB6B /* AirportModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
