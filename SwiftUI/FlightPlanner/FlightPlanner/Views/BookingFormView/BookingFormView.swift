@@ -8,18 +8,55 @@
 import SwiftUI
 
 struct BookingFormView: View {
+    @Environment(\.calendar) private var calendar
+    @Environment(\.dismiss) private var dismiss
+    
+    var flightModel: FlightModel
+  
     @StateObject private var airportModel = AirportModel()
+    @State private var inputData = BookingFormInputData()
+    
+    var airports: [Airport] {
+        self.airportModel.airports
+    }
+    
+    var isSaveDisabled: Bool {
+        self.inputData.destination == nil
+    }
     
     var body: some View {
-        Text("Booking form view")
-            .task {
-                Task.detached { @MainActor in
-                    await self.airportModel.load()
+        NavigationStack {
+            BookingForm(airports: self.airports, inputData: $inputData)
+                .navigationTitle("Add Your flight")
+                .task {
+                    Task.detached { @MainActor in
+                        await airportModel.load()
+                    }
                 }
-            }
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Button("Cancel") {
+                            dismiss()
+                        }
+                    }
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button("Save") {
+                            Task {
+                                await self.save()
+                            }
+                        }
+                        .disabled(isSaveDisabled)
+                    }
+                }
+        }
+    }
+    
+    func save() async {
+        await self.inputData.save(to: flightModel, in: calendar)
+        self.dismiss()
     }
 }
 
 #Preview {
-    BookingFormView()
+    BookingFormView(flightModel: FlightModel(itinerary: [.sfoToMiaToPmi]))
 }

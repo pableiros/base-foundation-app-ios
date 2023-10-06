@@ -11,7 +11,7 @@ import SwiftUI
 struct FlightPlannerApp: App {
     var body: some Scene {
         WindowGroup {
-            BookingFormView()
+            BookingFormView(flightModel: FlightModel(itinerary: [.sfoToMiaToPmi]))
         }
     }
 }

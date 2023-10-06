@@ -8,11 +8,32 @@
 import SwiftUI
 
 struct BookingForm: View {
+    var airports: [Airport]
+    @Binding var inputData: BookingFormInputData
+    @Environment(\.calendar) private var calendar
+    @State private var activeAirportPickerRole: AirportPicker.Role?
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Form {
+            JourneyPicker(selection: $inputData.journey)
+                .padding(.bottom)
+            BookingFormAirportDetails(airports: airports,
+                                      inputData: inputData,
+                                      activePickerRole: $activeAirportPickerRole)
+            
+        }
+        .labelsHidden()
+        .sheet(item: $activeAirportPickerRole) { role in
+            AirportPicker(airports: airports,
+                          role: $activeAirportPickerRole,
+                          inputData: $inputData)
+        }
     }
 }
 
 #Preview {
-    BookingForm()
+    let airports = [Airport.sfo, .mia, .pmi]
+    let inputData = BookingFormInputData()
+    
+    return BookingForm(airports: airports, inputData: .constant(inputData))
 }
