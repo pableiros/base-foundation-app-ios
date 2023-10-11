@@ -34,6 +34,9 @@
 		F81B5F192ACF7B3E001BBB6B /* DestinationAirportButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5F182ACF7B3E001BBB6B /* DestinationAirportButton.swift */; };
 		F81B5F1B2ACF7B4F001BBB6B /* OriginAirportButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5F1A2ACF7B4F001BBB6B /* OriginAirportButton.swift */; };
 		F81B5F1D2ACF7B72001BBB6B /* BookingFormAirportDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5F1C2ACF7B72001BBB6B /* BookingFormAirportDetails.swift */; };
+		F86DBB532AD724700019BFD6 /* DepartureDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86DBB522AD724700019BFD6 /* DepartureDatePicker.swift */; };
+		F86DBB552AD724C90019BFD6 /* BookingFormDateDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86DBB542AD724C90019BFD6 /* BookingFormDateDetails.swift */; };
+		F8FCBF442AD0A386000A2FEC /* ReturnDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FCBF432AD0A386000A2FEC /* ReturnDatePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +68,9 @@
 		F81B5F182ACF7B3E001BBB6B /* DestinationAirportButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationAirportButton.swift; sourceTree = "<group>"; };
 		F81B5F1A2ACF7B4F001BBB6B /* OriginAirportButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginAirportButton.swift; sourceTree = "<group>"; };
 		F81B5F1C2ACF7B72001BBB6B /* BookingFormAirportDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingFormAirportDetails.swift; sourceTree = "<group>"; };
+		F86DBB522AD724700019BFD6 /* DepartureDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartureDatePicker.swift; sourceTree = "<group>"; };
+		F86DBB542AD724C90019BFD6 /* BookingFormDateDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingFormDateDetails.swift; sourceTree = "<group>"; };
+		F8FCBF432AD0A386000A2FEC /* ReturnDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnDatePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +175,7 @@
 		F81B5EF12ACF70DA001BBB6B /* BookingFormView */ = {
 			isa = PBXGroup;
 			children = (
+				F8FCBF422AD0A36B000A2FEC /* BookingFormDateDetails */,
 				F81B5F112ACF7ADE001BBB6B /* BookingFormAirportDetails */,
 				F81B5EF22ACF70EB001BBB6B /* BookingFormView.swift */,
 				F81B5F092ACF796C001BBB6B /* BookingForm.swift */,
@@ -214,6 +221,16 @@
 				F81B5F162ACF7B17001BBB6B /* VerticalAlignmentExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F8FCBF422AD0A36B000A2FEC /* BookingFormDateDetails */ = {
+			isa = PBXGroup;
+			children = (
+				F8FCBF432AD0A386000A2FEC /* ReturnDatePicker.swift */,
+				F86DBB522AD724700019BFD6 /* DepartureDatePicker.swift */,
+				F86DBB542AD724C90019BFD6 /* BookingFormDateDetails.swift */,
+			);
+			path = BookingFormDateDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,14 +319,17 @@
 				F81B5F0A2ACF796C001BBB6B /* BookingForm.swift in Sources */,
 				F81B5ED92ACF6E60001BBB6B /* FlightPlannerApp.swift in Sources */,
 				F81B5F1D2ACF7B72001BBB6B /* BookingFormAirportDetails.swift in Sources */,
+				F86DBB552AD724C90019BFD6 /* BookingFormDateDetails.swift in Sources */,
 				F81B5EF32ACF70EB001BBB6B /* BookingFormView.swift in Sources */,
 				F81B5F172ACF7B17001BBB6B /* VerticalAlignmentExtension.swift in Sources */,
 				F81B5F132ACF7AED001BBB6B /* JourneyIcon.swift in Sources */,
 				F81B5EFA2ACF7645001BBB6B /* FlightInfo.swift in Sources */,
 				F81B5F0E2ACF79AC001BBB6B /* AirportPickerRow.swift in Sources */,
 				F81B5EF62ACF7611001BBB6B /* FlightJourney.swift in Sources */,
+				F8FCBF442AD0A386000A2FEC /* ReturnDatePicker.swift in Sources */,
 				F81B5EFC2ACF766A001BBB6B /* FlightSegmentGenerator.swift in Sources */,
 				F81B5EF02ACF7069001BBB6B /* AirportModel.swift in Sources */,
+				F86DBB532AD724700019BFD6 /* DepartureDatePicker.swift in Sources */,
 				F81B5F102ACF7A87001BBB6B /* JourneyPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

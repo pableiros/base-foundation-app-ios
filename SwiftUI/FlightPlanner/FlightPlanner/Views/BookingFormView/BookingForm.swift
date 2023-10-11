@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct BookingForm: View {
-    var airports: [Airport]
-    @Binding var inputData: BookingFormInputData
     @Environment(\.calendar) private var calendar
+    
+    var airports: [Airport]
+    
+    @Binding var inputData: BookingFormInputData
+    
     @State private var activeAirportPickerRole: AirportPicker.Role?
     
     var body: some View {
@@ -20,6 +23,7 @@ struct BookingForm: View {
             BookingFormAirportDetails(airports: airports,
                                       inputData: inputData,
                                       activePickerRole: $activeAirportPickerRole)
+            BookingFormDateDetails(inputData: $inputData)
             
         }
         .labelsHidden()
