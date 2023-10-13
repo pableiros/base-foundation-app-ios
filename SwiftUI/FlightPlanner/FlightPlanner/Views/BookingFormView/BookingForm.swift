@@ -24,7 +24,7 @@ struct BookingForm: View {
                                       inputData: inputData,
                                       activePickerRole: $activeAirportPickerRole)
             BookingFormDateDetails(inputData: $inputData)
-            
+            BookingFormPassengerDetails(passengerInfo: $inputData.passengerInfo)
         }
         .labelsHidden()
         .sheet(item: $activeAirportPickerRole) { role in
