@@ -8,14 +8,62 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.editMode) private var editMode
+    
+    @State private var selection: FlightLeg?
+    @State private var showBookingForm = false
+    
+    @StateObject private var flightModel = FlightModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationSplitView {
+            ZStack {
+                Group {
+                    if self.flightModel.segments.isEmpty {
+                        Text("No Flights")
+                            .font(.title)
+                            .fontWeight(.medium)
+                            .foregroundStyle(.tertiary)
+                    } else {
+                        // TODO: - Flight itinerary list
+                    }
+                }
+                .task {
+                    Task.detached { @MainActor in
+                        await self.flightModel.load()
+                    }
+                }
+                .navigationTitle("My Flights")
+                .sheet(isPresented: $showBookingForm) {
+                    BookingFormView(flightModel: flightModel)
+                }
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        EditButton()
+                            .disabled(flightModel.segments.isEmpty)
+                    }
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button {
+                            self.showBookingForm.toggle()
+                        } label: {
+                            Label("Add Flight", systemImage: "square.and.pencil")
+                        }
+                    }
+                }
+            }
+        } detail: {
+            ZStack {
+                // TODO: - Flight Leg Detail
+            }
         }
-        .padding()
+    }
+    
+    func onDelete(atOffsets offsets: IndexSet, in segment: FlightSegment) {
+        self.flightModel.removeLegs(atOffsets: offsets, in: segment)
+    }
+    
+    var isAddFlightButtonDisabled: Bool {
+        self.editMode?.wrappedValue.isEditing == true
     }
 }
 
