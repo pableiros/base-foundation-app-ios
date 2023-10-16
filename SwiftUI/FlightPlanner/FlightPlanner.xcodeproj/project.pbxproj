@@ -38,6 +38,16 @@
 		F86DBB552AD724C90019BFD6 /* BookingFormDateDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86DBB542AD724C90019BFD6 /* BookingFormDateDetails.swift */; };
 		F88746822AD88BED00916E08 /* PassengersStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88746812AD88BED00916E08 /* PassengersStepper.swift */; };
 		F88746842AD88CF400916E08 /* BookingFormPassengerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88746832AD88CF400916E08 /* BookingFormPassengerDetails.swift */; };
+		F8BB0D2B2ADD9B47001F6AAD /* FlightLegRowFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BB0D2A2ADD9B47001F6AAD /* FlightLegRowFooter.swift */; };
+		F8BB0D2D2ADD9BC5001F6AAD /* FlightLegRowHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BB0D2C2ADD9BC5001F6AAD /* FlightLegRowHeader.swift */; };
+		F8BB0D2F2ADD9BD1001F6AAD /* AlignmentLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BB0D2E2ADD9BD1001F6AAD /* AlignmentLabelStyle.swift */; };
+		F8BB0D312ADD9C70001F6AAD /* FlightLegArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BB0D302ADD9C70001F6AAD /* FlightLegArrow.swift */; };
+		F8BB0D332ADD9CFD001F6AAD /* FlightLegRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BB0D322ADD9CFD001F6AAD /* FlightLegRow.swift */; };
+		F8BB0D352ADD9D09001F6AAD /* AlignmentExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BB0D342ADD9D09001F6AAD /* AlignmentExtension.swift */; };
+		F8BB0D372ADD9D1B001F6AAD /* HorizontalAlignmentExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BB0D362ADD9D1B001F6AAD /* HorizontalAlignmentExtension.swift */; };
+		F8BB0D392ADD9D8B001F6AAD /* FlightSegmentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BB0D382ADD9D8B001F6AAD /* FlightSegmentRow.swift */; };
+		F8BB0D3B2ADD9E03001F6AAD /* FlightItineraryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BB0D3A2ADD9E03001F6AAD /* FlightItineraryList.swift */; };
+		F8BB0D3D2ADD9E34001F6AAD /* FlightSegmentSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BB0D3C2ADD9E34001F6AAD /* FlightSegmentSectionHeader.swift */; };
 		F8FCBF442AD0A386000A2FEC /* ReturnDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FCBF432AD0A386000A2FEC /* ReturnDatePicker.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +84,16 @@
 		F86DBB542AD724C90019BFD6 /* BookingFormDateDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingFormDateDetails.swift; sourceTree = "<group>"; };
 		F88746812AD88BED00916E08 /* PassengersStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengersStepper.swift; sourceTree = "<group>"; };
 		F88746832AD88CF400916E08 /* BookingFormPassengerDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingFormPassengerDetails.swift; sourceTree = "<group>"; };
+		F8BB0D2A2ADD9B47001F6AAD /* FlightLegRowFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLegRowFooter.swift; sourceTree = "<group>"; };
+		F8BB0D2C2ADD9BC5001F6AAD /* FlightLegRowHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLegRowHeader.swift; sourceTree = "<group>"; };
+		F8BB0D2E2ADD9BD1001F6AAD /* AlignmentLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentLabelStyle.swift; sourceTree = "<group>"; };
+		F8BB0D302ADD9C70001F6AAD /* FlightLegArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLegArrow.swift; sourceTree = "<group>"; };
+		F8BB0D322ADD9CFD001F6AAD /* FlightLegRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLegRow.swift; sourceTree = "<group>"; };
+		F8BB0D342ADD9D09001F6AAD /* AlignmentExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentExtension.swift; sourceTree = "<group>"; };
+		F8BB0D362ADD9D1B001F6AAD /* HorizontalAlignmentExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalAlignmentExtension.swift; sourceTree = "<group>"; };
+		F8BB0D382ADD9D8B001F6AAD /* FlightSegmentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSegmentRow.swift; sourceTree = "<group>"; };
+		F8BB0D3A2ADD9E03001F6AAD /* FlightItineraryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightItineraryList.swift; sourceTree = "<group>"; };
+		F8BB0D3C2ADD9E34001F6AAD /* FlightSegmentSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSegmentSectionHeader.swift; sourceTree = "<group>"; };
 		F8FCBF432AD0A386000A2FEC /* ReturnDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnDatePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +148,7 @@
 		F81B5EE62ACF6E67001BBB6B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F8BB0D292ADD9B2B001F6AAD /* FlightItineraryList */,
 				F81B5EF12ACF70DA001BBB6B /* BookingFormView */,
 				F81B5EDA2ACF6E60001BBB6B /* ContentView.swift */,
 			);
@@ -224,6 +245,8 @@
 			isa = PBXGroup;
 			children = (
 				F81B5F162ACF7B17001BBB6B /* VerticalAlignmentExtension.swift */,
+				F8BB0D342ADD9D09001F6AAD /* AlignmentExtension.swift */,
+				F8BB0D362ADD9D1B001F6AAD /* HorizontalAlignmentExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -235,6 +258,21 @@
 				F88746832AD88CF400916E08 /* BookingFormPassengerDetails.swift */,
 			);
 			path = BookingFormPassengerDetails;
+			sourceTree = "<group>";
+		};
+		F8BB0D292ADD9B2B001F6AAD /* FlightItineraryList */ = {
+			isa = PBXGroup;
+			children = (
+				F8BB0D2A2ADD9B47001F6AAD /* FlightLegRowFooter.swift */,
+				F8BB0D2C2ADD9BC5001F6AAD /* FlightLegRowHeader.swift */,
+				F8BB0D2E2ADD9BD1001F6AAD /* AlignmentLabelStyle.swift */,
+				F8BB0D302ADD9C70001F6AAD /* FlightLegArrow.swift */,
+				F8BB0D322ADD9CFD001F6AAD /* FlightLegRow.swift */,
+				F8BB0D382ADD9D8B001F6AAD /* FlightSegmentRow.swift */,
+				F8BB0D3A2ADD9E03001F6AAD /* FlightItineraryList.swift */,
+				F8BB0D3C2ADD9E34001F6AAD /* FlightSegmentSectionHeader.swift */,
+			);
+			path = FlightItineraryList;
 			sourceTree = "<group>";
 		};
 		F8FCBF422AD0A36B000A2FEC /* BookingFormDateDetails */ = {
@@ -321,11 +359,17 @@
 				F81B5F0C2ACF7991001BBB6B /* AirportPicker.swift in Sources */,
 				F81B5F082ACF781B001BBB6B /* FlightModel.swift in Sources */,
 				F81B5EEB2ACF6F5D001BBB6B /* Airport.swift in Sources */,
+				F8BB0D312ADD9C70001F6AAD /* FlightLegArrow.swift in Sources */,
+				F8BB0D352ADD9D09001F6AAD /* AlignmentExtension.swift in Sources */,
 				F81B5F042ACF7766001BBB6B /* FlightLegGenerator.swift in Sources */,
+				F8BB0D2F2ADD9BD1001F6AAD /* AlignmentLabelStyle.swift in Sources */,
+				F8BB0D372ADD9D1B001F6AAD /* HorizontalAlignmentExtension.swift in Sources */,
 				F81B5F062ACF7808001BBB6B /* BookingFormInputData.swift in Sources */,
+				F8BB0D332ADD9CFD001F6AAD /* FlightLegRow.swift in Sources */,
 				F81B5F002ACF769A001BBB6B /* FlightLeg.swift in Sources */,
 				F81B5F192ACF7B3E001BBB6B /* DestinationAirportButton.swift in Sources */,
 				F81B5EFE2ACF7686001BBB6B /* FlightSegment.swift in Sources */,
+				F8BB0D392ADD9D8B001F6AAD /* FlightSegmentRow.swift in Sources */,
 				F81B5EDB2ACF6E60001BBB6B /* ContentView.swift in Sources */,
 				F81B5F022ACF7757001BBB6B /* FlightLegInfo.swift in Sources */,
 				F81B5F1B2ACF7B4F001BBB6B /* OriginAirportButton.swift in Sources */,
@@ -345,7 +389,11 @@
 				F8FCBF442AD0A386000A2FEC /* ReturnDatePicker.swift in Sources */,
 				F81B5EFC2ACF766A001BBB6B /* FlightSegmentGenerator.swift in Sources */,
 				F81B5EF02ACF7069001BBB6B /* AirportModel.swift in Sources */,
+				F8BB0D2D2ADD9BC5001F6AAD /* FlightLegRowHeader.swift in Sources */,
+				F8BB0D3D2ADD9E34001F6AAD /* FlightSegmentSectionHeader.swift in Sources */,
 				F86DBB532AD724700019BFD6 /* DepartureDatePicker.swift in Sources */,
+				F8BB0D3B2ADD9E03001F6AAD /* FlightItineraryList.swift in Sources */,
+				F8BB0D2B2ADD9B47001F6AAD /* FlightLegRowFooter.swift in Sources */,
 				F81B5F102ACF7A87001BBB6B /* JourneyPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

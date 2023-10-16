@@ -25,7 +25,9 @@ struct ContentView: View {
                             .fontWeight(.medium)
                             .foregroundStyle(.tertiary)
                     } else {
-                        // TODO: - Flight itinerary list
+                        FlightItineraryList(selection: self.$selection,
+                                            segments: self.$flightModel.segments,
+                                            onDelete: self.onDelete)
                     }
                 }
                 .task {

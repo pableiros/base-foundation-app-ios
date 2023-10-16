@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension VerticalAlignment {
-    private struct FlightLegArrow: AlignmentID {
+    struct FlightLegArrow: AlignmentID {
         static func defaultValue(in dimensions: ViewDimensions) -> CGFloat {
             dimensions[VerticalAlignment.center]
         }
