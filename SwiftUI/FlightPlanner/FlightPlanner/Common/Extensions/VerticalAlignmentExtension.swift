@@ -13,6 +13,16 @@ extension VerticalAlignment {
             dimensions[VerticalAlignment.center]
         }
     }
-
+    
+    struct FlightLegDetailAirplane: AlignmentID {
+        static func defaultValue(in dimension: ViewDimensions) -> CGFloat {
+            dimension[VerticalAlignment.center]
+        }
+    }
+    
     static let flightLegArrow = VerticalAlignment(FlightLegArrow.self)
+    
+    static let flightLegDetailAirplane: VerticalAlignment = {
+        VerticalAlignment(FlightLegDetailAirplane.self)
+    }()
 }

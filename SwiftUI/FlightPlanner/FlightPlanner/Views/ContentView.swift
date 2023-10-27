@@ -55,7 +55,9 @@ struct ContentView: View {
             }
         } detail: {
             ZStack {
-                // TODO: - Flight Leg Detail
+                if let leg = self.selection {
+                    FlightLegDetail(leg: leg)
+                }
             }
         }
     }

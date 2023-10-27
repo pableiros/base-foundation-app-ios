@@ -34,6 +34,14 @@
 		F81B5F192ACF7B3E001BBB6B /* DestinationAirportButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5F182ACF7B3E001BBB6B /* DestinationAirportButton.swift */; };
 		F81B5F1B2ACF7B4F001BBB6B /* OriginAirportButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5F1A2ACF7B4F001BBB6B /* OriginAirportButton.swift */; };
 		F81B5F1D2ACF7B72001BBB6B /* BookingFormAirportDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B5F1C2ACF7B72001BBB6B /* BookingFormAirportDetails.swift */; };
+		F839425A2AE3070400C60612 /* FlightLegDetailBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83942592AE3070400C60612 /* FlightLegDetailBanner.swift */; };
+		F839425C2AE3096400C60612 /* ForecastGridRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839425B2AE3096400C60612 /* ForecastGridRow.swift */; };
+		F839425E2AE3098400C60612 /* FlightForecastInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839425D2AE3098400C60612 /* FlightForecastInfo.swift */; };
+		F83942622AE30AF600C60612 /* FlightLegDetailWeatherGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83942612AE30AF600C60612 /* FlightLegDetailWeatherGrid.swift */; };
+		F83942642AE30B0F00C60612 /* HeaderGridRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83942632AE30B0F00C60612 /* HeaderGridRow.swift */; };
+		F83942662AE30C8700C60612 /* FlightLegDetailSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83942652AE30C8700C60612 /* FlightLegDetailSection.swift */; };
+		F83942682AE30EBF00C60612 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83942672AE30EBF00C60612 /* WeatherModel.swift */; };
+		F839426A2AE3124700C60612 /* FlightLegDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83942692AE3124700C60612 /* FlightLegDetail.swift */; };
 		F86DBB532AD724700019BFD6 /* DepartureDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86DBB522AD724700019BFD6 /* DepartureDatePicker.swift */; };
 		F86DBB552AD724C90019BFD6 /* BookingFormDateDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86DBB542AD724C90019BFD6 /* BookingFormDateDetails.swift */; };
 		F88746822AD88BED00916E08 /* PassengersStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88746812AD88BED00916E08 /* PassengersStepper.swift */; };
@@ -80,8 +88,17 @@
 		F81B5F182ACF7B3E001BBB6B /* DestinationAirportButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationAirportButton.swift; sourceTree = "<group>"; };
 		F81B5F1A2ACF7B4F001BBB6B /* OriginAirportButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginAirportButton.swift; sourceTree = "<group>"; };
 		F81B5F1C2ACF7B72001BBB6B /* BookingFormAirportDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingFormAirportDetails.swift; sourceTree = "<group>"; };
+		F83942592AE3070400C60612 /* FlightLegDetailBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLegDetailBanner.swift; sourceTree = "<group>"; };
+		F839425B2AE3096400C60612 /* ForecastGridRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastGridRow.swift; sourceTree = "<group>"; };
+		F839425D2AE3098400C60612 /* FlightForecastInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightForecastInfo.swift; sourceTree = "<group>"; };
+		F83942612AE30AF600C60612 /* FlightLegDetailWeatherGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLegDetailWeatherGrid.swift; sourceTree = "<group>"; };
+		F83942632AE30B0F00C60612 /* HeaderGridRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderGridRow.swift; sourceTree = "<group>"; };
+		F83942652AE30C8700C60612 /* FlightLegDetailSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLegDetailSection.swift; sourceTree = "<group>"; };
+		F83942672AE30EBF00C60612 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		F83942692AE3124700C60612 /* FlightLegDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLegDetail.swift; sourceTree = "<group>"; };
 		F86DBB522AD724700019BFD6 /* DepartureDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartureDatePicker.swift; sourceTree = "<group>"; };
 		F86DBB542AD724C90019BFD6 /* BookingFormDateDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingFormDateDetails.swift; sourceTree = "<group>"; };
+		F86E3D252AEC43F300BFC5D6 /* FlightPlanner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlightPlanner.entitlements; sourceTree = "<group>"; };
 		F88746812AD88BED00916E08 /* PassengersStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengersStepper.swift; sourceTree = "<group>"; };
 		F88746832AD88CF400916E08 /* BookingFormPassengerDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingFormPassengerDetails.swift; sourceTree = "<group>"; };
 		F8BB0D2A2ADD9B47001F6AAD /* FlightLegRowFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLegRowFooter.swift; sourceTree = "<group>"; };
@@ -127,6 +144,7 @@
 		F81B5ED72ACF6E60001BBB6B /* FlightPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				F86E3D252AEC43F300BFC5D6 /* FlightPlanner.entitlements */,
 				F81B5F142ACF7B07001BBB6B /* Common */,
 				F81B5EEE2ACF705C001BBB6B /* Models */,
 				F81B5EE82ACF6EE5001BBB6B /* Templates */,
@@ -148,6 +166,7 @@
 		F81B5EE62ACF6E67001BBB6B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F83942582AE3069700C60612 /* FlightLegDetail */,
 				F8BB0D292ADD9B2B001F6AAD /* FlightItineraryList */,
 				F81B5EF12ACF70DA001BBB6B /* BookingFormView */,
 				F81B5EDA2ACF6E60001BBB6B /* ContentView.swift */,
@@ -184,6 +203,7 @@
 				F81B5EFF2ACF769A001BBB6B /* FlightLeg.swift */,
 				F81B5F012ACF7757001BBB6B /* FlightLegInfo.swift */,
 				F81B5F052ACF7808001BBB6B /* BookingFormInputData.swift */,
+				F839425D2AE3098400C60612 /* FlightForecastInfo.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -193,6 +213,7 @@
 			children = (
 				F81B5EEF2ACF7069001BBB6B /* AirportModel.swift */,
 				F81B5F072ACF781B001BBB6B /* FlightModel.swift */,
+				F83942672AE30EBF00C60612 /* WeatherModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -249,6 +270,19 @@
 				F8BB0D362ADD9D1B001F6AAD /* HorizontalAlignmentExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F83942582AE3069700C60612 /* FlightLegDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F83942592AE3070400C60612 /* FlightLegDetailBanner.swift */,
+				F839425B2AE3096400C60612 /* ForecastGridRow.swift */,
+				F83942612AE30AF600C60612 /* FlightLegDetailWeatherGrid.swift */,
+				F83942632AE30B0F00C60612 /* HeaderGridRow.swift */,
+				F83942652AE30C8700C60612 /* FlightLegDetailSection.swift */,
+				F83942692AE3124700C60612 /* FlightLegDetail.swift */,
+			);
+			path = FlightLegDetail;
 			sourceTree = "<group>";
 		};
 		F88746802AD88BE000916E08 /* BookingFormPassengerDetails */ = {
@@ -356,6 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F839425C2AE3096400C60612 /* ForecastGridRow.swift in Sources */,
 				F81B5F0C2ACF7991001BBB6B /* AirportPicker.swift in Sources */,
 				F81B5F082ACF781B001BBB6B /* FlightModel.swift in Sources */,
 				F81B5EEB2ACF6F5D001BBB6B /* Airport.swift in Sources */,
@@ -371,9 +406,11 @@
 				F81B5EFE2ACF7686001BBB6B /* FlightSegment.swift in Sources */,
 				F8BB0D392ADD9D8B001F6AAD /* FlightSegmentRow.swift in Sources */,
 				F81B5EDB2ACF6E60001BBB6B /* ContentView.swift in Sources */,
+				F83942622AE30AF600C60612 /* FlightLegDetailWeatherGrid.swift in Sources */,
 				F81B5F022ACF7757001BBB6B /* FlightLegInfo.swift in Sources */,
 				F81B5F1B2ACF7B4F001BBB6B /* OriginAirportButton.swift in Sources */,
 				F81B5EF82ACF7628001BBB6B /* PassengerInfo.swift in Sources */,
+				F83942662AE30C8700C60612 /* FlightLegDetailSection.swift in Sources */,
 				F88746822AD88BED00916E08 /* PassengersStepper.swift in Sources */,
 				F81B5F0A2ACF796C001BBB6B /* BookingForm.swift in Sources */,
 				F81B5ED92ACF6E60001BBB6B /* FlightPlannerApp.swift in Sources */,
@@ -381,6 +418,7 @@
 				F86DBB552AD724C90019BFD6 /* BookingFormDateDetails.swift in Sources */,
 				F88746842AD88CF400916E08 /* BookingFormPassengerDetails.swift in Sources */,
 				F81B5EF32ACF70EB001BBB6B /* BookingFormView.swift in Sources */,
+				F839425E2AE3098400C60612 /* FlightForecastInfo.swift in Sources */,
 				F81B5F172ACF7B17001BBB6B /* VerticalAlignmentExtension.swift in Sources */,
 				F81B5F132ACF7AED001BBB6B /* JourneyIcon.swift in Sources */,
 				F81B5EFA2ACF7645001BBB6B /* FlightInfo.swift in Sources */,
@@ -393,8 +431,12 @@
 				F8BB0D3D2ADD9E34001F6AAD /* FlightSegmentSectionHeader.swift in Sources */,
 				F86DBB532AD724700019BFD6 /* DepartureDatePicker.swift in Sources */,
 				F8BB0D3B2ADD9E03001F6AAD /* FlightItineraryList.swift in Sources */,
+				F839425A2AE3070400C60612 /* FlightLegDetailBanner.swift in Sources */,
+				F83942682AE30EBF00C60612 /* WeatherModel.swift in Sources */,
+				F83942642AE30B0F00C60612 /* HeaderGridRow.swift in Sources */,
 				F8BB0D2B2ADD9B47001F6AAD /* FlightLegRowFooter.swift in Sources */,
 				F81B5F102ACF7A87001BBB6B /* JourneyPicker.swift in Sources */,
+				F839426A2AE3124700C60612 /* FlightLegDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,10 +567,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FlightPlanner/FlightPlanner.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FlightPlanner/Preview Content\"";
-				DEVELOPMENT_TEAM = VJ2UHY4TW3;
+				DEVELOPMENT_TEAM = S5W5336DZV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -541,7 +584,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pableiros.FlightPlanner;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiprotec.poc.weatherkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -554,10 +597,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FlightPlanner/FlightPlanner.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FlightPlanner/Preview Content\"";
-				DEVELOPMENT_TEAM = VJ2UHY4TW3;
+				DEVELOPMENT_TEAM = S5W5336DZV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -570,7 +614,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pableiros.FlightPlanner;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiprotec.poc.weatherkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

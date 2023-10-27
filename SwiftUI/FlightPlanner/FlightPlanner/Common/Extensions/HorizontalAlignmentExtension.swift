@@ -14,5 +14,15 @@ extension HorizontalAlignment {
         }
     }
     
+    struct WeatherSymbol: AlignmentID {
+        static func defaultValue(in dimension: ViewDimensions) -> CGFloat {
+            dimension[HorizontalAlignment.center]
+        }
+    }
+    
     static let arrow = HorizontalAlignment(FlightListLegRowArrow.self)
+    
+    static let weatherSymbol: HorizontalAlignment = {
+        HorizontalAlignment(WeatherSymbol.self)
+    }()
 }
