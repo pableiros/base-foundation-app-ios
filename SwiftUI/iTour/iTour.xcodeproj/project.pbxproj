@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8C83F8B2B0ECA520045837F /* EditDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C83F8A2B0ECA520045837F /* EditDestinationView.swift */; };
 		F8D9D6592B043B9B0045E5D7 /* iTourApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D9D6582B043B9B0045E5D7 /* iTourApp.swift */; };
 		F8D9D65B2B043B9B0045E5D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D9D65A2B043B9B0045E5D7 /* ContentView.swift */; };
 		F8D9D65D2B043B9C0045E5D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D9D65C2B043B9C0045E5D7 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F8C83F8A2B0ECA520045837F /* EditDestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDestinationView.swift; sourceTree = "<group>"; };
 		F8D9D6552B043B9B0045E5D7 /* iTour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D9D6582B043B9B0045E5D7 /* iTourApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTourApp.swift; sourceTree = "<group>"; };
 		F8D9D65A2B043B9B0045E5D7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				F8D9D65A2B043B9B0045E5D7 /* ContentView.swift */,
+				F8C83F8A2B0ECA520045837F /* EditDestinationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				F8D9D65B2B043B9B0045E5D7 /* ContentView.swift in Sources */,
 				F8D9D6592B043B9B0045E5D7 /* iTourApp.swift in Sources */,
 				F8D9D66A2B043BE60045E5D7 /* Destination.swift in Sources */,
+				F8C83F8B2B0ECA520045837F /* EditDestinationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
