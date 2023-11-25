@@ -13,22 +13,28 @@ struct ContentView: View {
     
     @Query var destinations: [Destination]
     
+    @State private var path = [Destination]()
+    
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: self.$path) {
             List {
                 ForEach(self.destinations) { destination in
-                    VStack(alignment: .leading) {
-                        Text(destination.name)
-                            .font(.headline)
-                        
-                        Text(destination.date.formatted(date: .long, time: .shortened))
+                    NavigationLink(value: destination) {
+                        VStack(alignment: .leading) {
+                            Text(destination.name)
+                                .font(.headline)
+                            
+                            Text(destination.date.formatted(date: .long, time: .shortened))
+                        }
                     }
                 }
                 .onDelete(perform: self.deleteDestinations(_:))
             }
             .navigationTitle("iTour")
+            .navigationDestination(for: Destination.self, destination: EditDestinationView.init)
             .toolbar {
                 Button("Add Samples", action: self.addSamples)
+                Button("Add Destination", systemImage: "plus", action: self.addDestination)
             }
         }
     }
@@ -50,6 +56,13 @@ struct ContentView: View {
             let destination = self.destinations[index]
             self.modelContext.delete(destination)
         }
+    }
+    
+    private func addDestination() {
+        let destination = Destination()
+        self.modelContext.insert(destination)
+        
+        self.path = [destination]
     }
 }
 
