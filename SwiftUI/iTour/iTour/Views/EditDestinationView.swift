@@ -34,7 +34,7 @@ struct EditDestinationView: View {
 #Preview {
     do {
         let modelConfiguration = ModelConfiguration(isStoredInMemoryOnly: true)
-        let modelContainer = try ModelContainer(for: Destination.self,
+        _ = try ModelContainer(for: Destination.self,
                                                 configurations: modelConfiguration)
         let destination = Destination(name: "Example Destination", details: "Example details go here and will automatically expand vertically as they are edited.")
         

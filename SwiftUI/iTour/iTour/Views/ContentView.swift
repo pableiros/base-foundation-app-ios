@@ -13,10 +13,12 @@ struct ContentView: View {
     
     @State private var path = [Destination]()
     @State private var sortOrder = SortDescriptor(\Destination.name)
+    @State private var searchText = ""
     
     var body: some View {
         NavigationStack(path: self.$path) {
-            DestinationListingView(sort: self.sortOrder)
+            DestinationListingView(sort: self.sortOrder, searchText: self.searchText)
+                .searchable(text: self.$searchText)
                 .navigationTitle("iTour")
                 .navigationDestination(for: Destination.self, destination: EditDestinationView.init)
                 .toolbar {

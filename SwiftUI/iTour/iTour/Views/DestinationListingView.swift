@@ -13,8 +13,10 @@ struct DestinationListingView: View {
 
     @Query var destinations: [Destination]
 
-    init(sort: SortDescriptor<Destination>) {
-        self._destinations = Query(sort: [sort])
+    init(sort: SortDescriptor<Destination>, searchText: String) {
+        self._destinations = Query(filter: #Predicate { destination in            
+            return searchText.isEmpty ? true : destination.name.localizedStandardContains(searchText)
+        }, sort: [sort])
     }
     
     var body: some View {
