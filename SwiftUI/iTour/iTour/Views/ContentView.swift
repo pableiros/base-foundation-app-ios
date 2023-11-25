@@ -11,31 +11,32 @@ import SwiftData
 struct ContentView: View {
     @Environment(\.modelContext) var modelContext
     
-    @Query var destinations: [Destination]
-    
     @State private var path = [Destination]()
+    @State private var sortOrder = SortDescriptor(\Destination.name)
     
     var body: some View {
         NavigationStack(path: self.$path) {
-            List {
-                ForEach(self.destinations) { destination in
-                    NavigationLink(value: destination) {
-                        VStack(alignment: .leading) {
-                            Text(destination.name)
-                                .font(.headline)
+            DestinationListingView(sort: self.sortOrder)
+                .navigationTitle("iTour")
+                .navigationDestination(for: Destination.self, destination: EditDestinationView.init)
+                .toolbar {
+                    Button("Add Samples", action: self.addSamples)
+                    Button("Add Destination", systemImage: "plus", action: self.addDestination)
+                    
+                    Menu("Sort", systemImage: "arrow.up.arrow.down") {
+                        Picker("Sort", selection: self.$sortOrder) {
+                            Text("Name")
+                                .tag(SortDescriptor(\Destination.name))
                             
-                            Text(destination.date.formatted(date: .long, time: .shortened))
+                            Text("Priority")
+                                .tag(SortDescriptor(\Destination.priority, order: .reverse))
+                            
+                            Text("Date")
+                                .tag(SortDescriptor(\Destination.date))
                         }
+                        .pickerStyle(.inline)
                     }
                 }
-                .onDelete(perform: self.deleteDestinations(_:))
-            }
-            .navigationTitle("iTour")
-            .navigationDestination(for: Destination.self, destination: EditDestinationView.init)
-            .toolbar {
-                Button("Add Samples", action: self.addSamples)
-                Button("Add Destination", systemImage: "plus", action: self.addDestination)
-            }
         }
     }
     
@@ -49,13 +50,6 @@ struct ContentView: View {
         self.modelContext.insert(romeDestination)
         self.modelContext.insert(florenceDestination)
         self.modelContext.insert(naplesDestination)
-    }
-    
-    private func deleteDestinations(_ indexSet: IndexSet) {
-        for index in indexSet {
-            let destination = self.destinations[index]
-            self.modelContext.delete(destination)
-        }
     }
     
     private func addDestination() {
